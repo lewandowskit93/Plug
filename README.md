@@ -78,7 +78,22 @@ Here is a quick overview of functionalities and concepts used in **Plug**.
 
 ### Plugin
 
-**Plugin** is anything that implements **PPlugin** protocol. You can define what your plugins are and what they do. As an example there is *ViewPlugin* defined for you. This plugin delivers a single SwiftUI view.
+**Plugin** is anything that implements **PPlugin** protocol. You can define what your plugins are and what they do.
+
+As an example here you can see *ViewPlugin* which can return single SwiftUI view:
+```swift
+public final class ViewPlugin<V: View>: PPlugin {
+    private let builder: () -> V
+    
+    public init(builder: @escaping () -> V) {
+        self.builder = builder
+    }
+    
+    public var view: some View {
+        return builder()
+    }
+}
+```
 
 ### RuleResolvingContext
 

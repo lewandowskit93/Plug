@@ -83,6 +83,17 @@
 		F1A71D5823F8450D0067117D /* PluginMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D5723F8450D0067117D /* PluginMock.swift */; };
 		F1A71D5923F8450D0067117D /* PluginMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D5723F8450D0067117D /* PluginMock.swift */; };
 		F1A71D5A23F8450D0067117D /* PluginMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D5723F8450D0067117D /* PluginMock.swift */; };
+		F1A71D5E23F849B30067117D /* PluginPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D5D23F849B30067117D /* PluginPoint.swift */; };
+		F1A71D5F23F849B30067117D /* PluginPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D5D23F849B30067117D /* PluginPoint.swift */; };
+		F1A71D6023F849B30067117D /* PluginPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D5D23F849B30067117D /* PluginPoint.swift */; };
+		F1A71D6123F849B30067117D /* PluginPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D5D23F849B30067117D /* PluginPoint.swift */; };
+		F1A71D6323F849E00067117D /* PluginPointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D6223F849E00067117D /* PluginPointBuilder.swift */; };
+		F1A71D6423F849E00067117D /* PluginPointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D6223F849E00067117D /* PluginPointBuilder.swift */; };
+		F1A71D6523F849E00067117D /* PluginPointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D6223F849E00067117D /* PluginPointBuilder.swift */; };
+		F1A71D6623F849E00067117D /* PluginPointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D6223F849E00067117D /* PluginPointBuilder.swift */; };
+		F1A71D6823F84BB10067117D /* PluginPointBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D6723F84BB10067117D /* PluginPointBuilderTests.swift */; };
+		F1A71D6923F84BB10067117D /* PluginPointBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D6723F84BB10067117D /* PluginPointBuilderTests.swift */; };
+		F1A71D6A23F84BB10067117D /* PluginPointBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D6723F84BB10067117D /* PluginPointBuilderTests.swift */; };
 		FABED7821E959015224C34C7 /* PPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDFF7B452C60BCD2EA883DE /* PPlugin.swift */; };
 /* End PBXBuildFile section */
 
@@ -226,6 +237,9 @@
 		F1A71D4E23F843E60067117D /* IdentifiedPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiedPlugin.swift; sourceTree = "<group>"; };
 		F1A71D5323F8448B0067117D /* IdentifiablePluginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiablePluginTests.swift; sourceTree = "<group>"; };
 		F1A71D5723F8450D0067117D /* PluginMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginMock.swift; sourceTree = "<group>"; };
+		F1A71D5D23F849B30067117D /* PluginPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginPoint.swift; sourceTree = "<group>"; };
+		F1A71D6223F849E00067117D /* PluginPointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginPointBuilder.swift; sourceTree = "<group>"; };
+		F1A71D6723F84BB10067117D /* PluginPointBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginPointBuilderTests.swift; sourceTree = "<group>"; };
 		F7C6B275705C803AE34948CE /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		FE3138EEE6FF56AF3063C59F /* Plug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Plug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -371,6 +385,7 @@
 				F1A71D4123F8416E0067117D /* EnabledRuleTests.swift */,
 				F1A71D5323F8448B0067117D /* IdentifiablePluginTests.swift */,
 				F1A71D5723F8450D0067117D /* PluginMock.swift */,
+				F1A71D6723F84BB10067117D /* PluginPointBuilderTests.swift */,
 			);
 			path = PlugTests;
 			sourceTree = "<group>";
@@ -447,6 +462,8 @@
 				F1A71D5B23F847180067117D /* Plugins */,
 				31E40967E95E6B51D4BF2895 /* Info.plist */,
 				F1A71D0023F836C70067117D /* PRuleResolvingContext.swift */,
+				F1A71D5D23F849B30067117D /* PluginPoint.swift */,
+				F1A71D6223F849E00067117D /* PluginPointBuilder.swift */,
 			);
 			path = Plug;
 			sourceTree = "<group>";
@@ -882,6 +899,8 @@
 				F1A71D3C23F8407C0067117D /* EnabledRule.swift in Sources */,
 				F1A71D5223F843E60067117D /* IdentifiedPlugin.swift in Sources */,
 				F1A71D1D23F837150067117D /* AnyRule.swift in Sources */,
+				F1A71D6623F849E00067117D /* PluginPointBuilder.swift in Sources */,
+				F1A71D6123F849B30067117D /* PluginPoint.swift in Sources */,
 				987964E21287000C75BC6234 /* PPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -897,6 +916,8 @@
 				F1A71D3A23F8407C0067117D /* EnabledRule.swift in Sources */,
 				F1A71D5023F843E60067117D /* IdentifiedPlugin.swift in Sources */,
 				F1A71D1B23F837150067117D /* AnyRule.swift in Sources */,
+				F1A71D6423F849E00067117D /* PluginPointBuilder.swift in Sources */,
+				F1A71D5F23F849B30067117D /* PluginPoint.swift in Sources */,
 				059A944233FDB32332CEDD55 /* PPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -912,6 +933,8 @@
 				F1A71D3B23F8407C0067117D /* EnabledRule.swift in Sources */,
 				F1A71D5123F843E60067117D /* IdentifiedPlugin.swift in Sources */,
 				F1A71D1C23F837150067117D /* AnyRule.swift in Sources */,
+				F1A71D6523F849E00067117D /* PluginPointBuilder.swift in Sources */,
+				F1A71D6023F849B30067117D /* PluginPoint.swift in Sources */,
 				FABED7821E959015224C34C7 /* PPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -928,6 +951,7 @@
 				F1A71D3E23F8411A0067117D /* DisabledRuleTests.swift in Sources */,
 				F1A71D3023F83E6D0067117D /* AtomRuleTests.swift in Sources */,
 				F1A71D2723F838590067117D /* ResolvingContextMock.swift in Sources */,
+				F1A71D6823F84BB10067117D /* PluginPointBuilderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,6 +966,8 @@
 				F1A71D3923F8407C0067117D /* EnabledRule.swift in Sources */,
 				F1A71D4F23F843E60067117D /* IdentifiedPlugin.swift in Sources */,
 				F1A71D1A23F837150067117D /* AnyRule.swift in Sources */,
+				F1A71D6323F849E00067117D /* PluginPointBuilder.swift in Sources */,
+				F1A71D5E23F849B30067117D /* PluginPoint.swift in Sources */,
 				40076F6ECF58094E8CDD310A /* PPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -958,6 +984,7 @@
 				F1A71D3F23F8411A0067117D /* DisabledRuleTests.swift in Sources */,
 				F1A71D3123F83E6D0067117D /* AtomRuleTests.swift in Sources */,
 				F1A71D2823F838590067117D /* ResolvingContextMock.swift in Sources */,
+				F1A71D6923F84BB10067117D /* PluginPointBuilderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,6 +1009,7 @@
 				F1A71D4023F8411A0067117D /* DisabledRuleTests.swift in Sources */,
 				F1A71D3223F83E6D0067117D /* AtomRuleTests.swift in Sources */,
 				F1A71D2923F838590067117D /* ResolvingContextMock.swift in Sources */,
+				F1A71D6A23F84BB10067117D /* PluginPointBuilderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

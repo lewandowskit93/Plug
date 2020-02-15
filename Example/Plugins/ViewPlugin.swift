@@ -8,6 +8,7 @@
 
 #if canImport(SwiftUI)
 import SwiftUI
+import Plug
 
 @available(iOS 13.0, *)
 @available(OSX 10.15, *)

@@ -101,6 +101,8 @@
 		F1A71D7223F854640067117D /* MainMenuPluginsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D7123F854640067117D /* MainMenuPluginsFactory.swift */; };
 		F1A71D7623F854EE0067117D /* MainMenuContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D7523F854EE0067117D /* MainMenuContext.swift */; };
 		F1A71D7823F8560D0067117D /* HelloWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D7723F8560D0067117D /* HelloWorldView.swift */; };
+		F1A71D7B23F85D5B0067117D /* FeatureEnabledRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D7A23F85D5B0067117D /* FeatureEnabledRule.swift */; };
+		F1A71D7D23F85D9F0067117D /* PFeatureResolvableContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D7C23F85D9F0067117D /* PFeatureResolvableContext.swift */; };
 		FABED7821E959015224C34C7 /* PPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDFF7B452C60BCD2EA883DE /* PPlugin.swift */; };
 /* End PBXBuildFile section */
 
@@ -251,6 +253,8 @@
 		F1A71D7123F854640067117D /* MainMenuPluginsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuPluginsFactory.swift; sourceTree = "<group>"; };
 		F1A71D7523F854EE0067117D /* MainMenuContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuContext.swift; sourceTree = "<group>"; };
 		F1A71D7723F8560D0067117D /* HelloWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldView.swift; sourceTree = "<group>"; };
+		F1A71D7A23F85D5B0067117D /* FeatureEnabledRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureEnabledRule.swift; sourceTree = "<group>"; };
+		F1A71D7C23F85D9F0067117D /* PFeatureResolvableContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFeatureResolvableContext.swift; sourceTree = "<group>"; };
 		F7C6B275705C803AE34948CE /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		FE3138EEE6FF56AF3063C59F /* Plug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Plug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -353,6 +357,7 @@
 		6DCD1D6EE2DADAE8BF3FDB9E /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				F1A71D7923F85CF70067117D /* Rules */,
 				F1A71D7423F854DB0067117D /* Context */,
 				F1A71D7323F854BA0067117D /* Views */,
 				F1A71D7023F8543A0067117D /* Plugins */,
@@ -490,8 +495,17 @@
 			isa = PBXGroup;
 			children = (
 				F1A71D7523F854EE0067117D /* MainMenuContext.swift */,
+				F1A71D7C23F85D9F0067117D /* PFeatureResolvableContext.swift */,
 			);
 			path = Context;
+			sourceTree = "<group>";
+		};
+		F1A71D7923F85CF70067117D /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				F1A71D7A23F85D5B0067117D /* FeatureEnabledRule.swift */,
+			);
+			path = Rules;
 			sourceTree = "<group>";
 		};
 		F2D060D728B27571785A1A24 /* Plug */ = {
@@ -1039,6 +1053,8 @@
 				F1A71D7823F8560D0067117D /* HelloWorldView.swift in Sources */,
 				13025556516D516060EB34F0 /* AppDelegate.swift in Sources */,
 				641A4350529552B898217CB7 /* ContentView.swift in Sources */,
+				F1A71D7D23F85D9F0067117D /* PFeatureResolvableContext.swift in Sources */,
+				F1A71D7B23F85D5B0067117D /* FeatureEnabledRule.swift in Sources */,
 				F1A71D7623F854EE0067117D /* MainMenuContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,6 @@
 
 import Plug
 
-class MainMenuContext: PRuleResolvingContext {
-    
+class MainMenuContext: PFeatureResolvableContext {
+    let enabledFeatures: [String] = ["feature_1", "feature_2", "feature_4"]
 }

@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/badge/Platform-linux-brightgreen.svg)](#)
 [![License](https://img.shields.io/cocoapods/l/Plug.svg?style=flat)](https://cocoapods.org/pods/Plug)
 
-Plug is a lightweight, multiplatform plugin management tool written in pure Swift. It allows to define rules at wich given plugin is used.
+Plug is a lightweight, multiplatform plugin management tool written in pure Swift. It allows to define rules at which given plugins are available.
 
 ## Requirements
 

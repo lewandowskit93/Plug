@@ -422,6 +422,8 @@
 		F1A71D5B23F847180067117D /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				F1A71D4E23F843E60067117D /* IdentifiedPlugin.swift */,
+				7CDFF7B452C60BCD2EA883DE /* PPlugin.swift */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
@@ -434,8 +436,6 @@
 				F1A71D2A23F83DC20067117D /* AtomRule.swift */,
 				F1A71D3323F840250067117D /* DisabledRule.swift */,
 				F1A71D3823F8407C0067117D /* EnabledRule.swift */,
-				7CDFF7B452C60BCD2EA883DE /* PPlugin.swift */,
-				F1A71D4E23F843E60067117D /* IdentifiedPlugin.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";

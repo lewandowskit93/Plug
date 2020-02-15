@@ -94,6 +94,13 @@
 		F1A71D6823F84BB10067117D /* PluginPointBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D6723F84BB10067117D /* PluginPointBuilderTests.swift */; };
 		F1A71D6923F84BB10067117D /* PluginPointBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D6723F84BB10067117D /* PluginPointBuilderTests.swift */; };
 		F1A71D6A23F84BB10067117D /* PluginPointBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D6723F84BB10067117D /* PluginPointBuilderTests.swift */; };
+		F1A71D6C23F852100067117D /* ViewPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D6B23F852100067117D /* ViewPlugin.swift */; };
+		F1A71D6D23F852100067117D /* ViewPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D6B23F852100067117D /* ViewPlugin.swift */; };
+		F1A71D6E23F852100067117D /* ViewPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D6B23F852100067117D /* ViewPlugin.swift */; };
+		F1A71D6F23F852100067117D /* ViewPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D6B23F852100067117D /* ViewPlugin.swift */; };
+		F1A71D7223F854640067117D /* MainMenuPluginsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D7123F854640067117D /* MainMenuPluginsFactory.swift */; };
+		F1A71D7623F854EE0067117D /* MainMenuContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D7523F854EE0067117D /* MainMenuContext.swift */; };
+		F1A71D7823F8560D0067117D /* HelloWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D7723F8560D0067117D /* HelloWorldView.swift */; };
 		FABED7821E959015224C34C7 /* PPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDFF7B452C60BCD2EA883DE /* PPlugin.swift */; };
 /* End PBXBuildFile section */
 
@@ -240,6 +247,10 @@
 		F1A71D5D23F849B30067117D /* PluginPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginPoint.swift; sourceTree = "<group>"; };
 		F1A71D6223F849E00067117D /* PluginPointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginPointBuilder.swift; sourceTree = "<group>"; };
 		F1A71D6723F84BB10067117D /* PluginPointBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginPointBuilderTests.swift; sourceTree = "<group>"; };
+		F1A71D6B23F852100067117D /* ViewPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPlugin.swift; sourceTree = "<group>"; };
+		F1A71D7123F854640067117D /* MainMenuPluginsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuPluginsFactory.swift; sourceTree = "<group>"; };
+		F1A71D7523F854EE0067117D /* MainMenuContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuContext.swift; sourceTree = "<group>"; };
+		F1A71D7723F8560D0067117D /* HelloWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldView.swift; sourceTree = "<group>"; };
 		F7C6B275705C803AE34948CE /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		FE3138EEE6FF56AF3063C59F /* Plug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Plug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -342,10 +353,12 @@
 		6DCD1D6EE2DADAE8BF3FDB9E /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				F1A71D7423F854DB0067117D /* Context */,
+				F1A71D7323F854BA0067117D /* Views */,
+				F1A71D7023F8543A0067117D /* Plugins */,
 				793E5C54F6A7B5699D307246 /* Preview Content */,
 				334DB99AF348B72E4F6E3CC8 /* AppDelegate.swift */,
 				A794C260CF9C84694B269B69 /* Assets.xcassets */,
-				0C7364B8D18A00A12F7120C6 /* ContentView.swift */,
 				EC7FB66C557127FA6A988797 /* Example.entitlements */,
 				34FC4797ED6817D8E634F45A /* Info.plist */,
 				28A9C7B0C11570B4D4052C56 /* Main.storyboard */,
@@ -439,6 +452,7 @@
 			children = (
 				F1A71D4E23F843E60067117D /* IdentifiedPlugin.swift */,
 				7CDFF7B452C60BCD2EA883DE /* PPlugin.swift */,
+				F1A71D6B23F852100067117D /* ViewPlugin.swift */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
@@ -453,6 +467,31 @@
 				F1A71D3823F8407C0067117D /* EnabledRule.swift */,
 			);
 			path = Rules;
+			sourceTree = "<group>";
+		};
+		F1A71D7023F8543A0067117D /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				F1A71D7123F854640067117D /* MainMenuPluginsFactory.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		F1A71D7323F854BA0067117D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C7364B8D18A00A12F7120C6 /* ContentView.swift */,
+				F1A71D7723F8560D0067117D /* HelloWorldView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1A71D7423F854DB0067117D /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				F1A71D7523F854EE0067117D /* MainMenuContext.swift */,
+			);
+			path = Context;
 			sourceTree = "<group>";
 		};
 		F2D060D728B27571785A1A24 /* Plug */ = {
@@ -902,6 +941,7 @@
 				F1A71D6623F849E00067117D /* PluginPointBuilder.swift in Sources */,
 				F1A71D6123F849B30067117D /* PluginPoint.swift in Sources */,
 				987964E21287000C75BC6234 /* PPlugin.swift in Sources */,
+				F1A71D6F23F852100067117D /* ViewPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -919,6 +959,7 @@
 				F1A71D6423F849E00067117D /* PluginPointBuilder.swift in Sources */,
 				F1A71D5F23F849B30067117D /* PluginPoint.swift in Sources */,
 				059A944233FDB32332CEDD55 /* PPlugin.swift in Sources */,
+				F1A71D6D23F852100067117D /* ViewPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -936,6 +977,7 @@
 				F1A71D6523F849E00067117D /* PluginPointBuilder.swift in Sources */,
 				F1A71D6023F849B30067117D /* PluginPoint.swift in Sources */,
 				FABED7821E959015224C34C7 /* PPlugin.swift in Sources */,
+				F1A71D6E23F852100067117D /* ViewPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -969,6 +1011,7 @@
 				F1A71D6323F849E00067117D /* PluginPointBuilder.swift in Sources */,
 				F1A71D5E23F849B30067117D /* PluginPoint.swift in Sources */,
 				40076F6ECF58094E8CDD310A /* PPlugin.swift in Sources */,
+				F1A71D6C23F852100067117D /* ViewPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -992,8 +1035,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A71D7223F854640067117D /* MainMenuPluginsFactory.swift in Sources */,
+				F1A71D7823F8560D0067117D /* HelloWorldView.swift in Sources */,
 				13025556516D516060EB34F0 /* AppDelegate.swift in Sources */,
 				641A4350529552B898217CB7 /* ContentView.swift in Sources */,
+				F1A71D7623F854EE0067117D /* MainMenuContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

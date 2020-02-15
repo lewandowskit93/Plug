@@ -34,6 +34,24 @@
 		D3D7F82BACC0DF19B10E1B93 /* PluginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94919E61FEA9DB7F5AB586A2 /* PluginTests.swift */; };
 		E11EC518067F5E38B972AA2E /* Pods_Plug_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD75422EE755A67E8FE9F29C /* Pods_Plug_tvOS.framework */; };
 		E7AE9AF235E541330617D61F /* Plug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3138EEE6FF56AF3063C59F /* Plug.framework */; };
+		F1A71D0123F836C70067117D /* PRuleResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0023F836C70067117D /* PRuleResolver.swift */; };
+		F1A71D0223F836C70067117D /* PRuleResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0023F836C70067117D /* PRuleResolver.swift */; };
+		F1A71D0323F836C70067117D /* PRuleResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0023F836C70067117D /* PRuleResolver.swift */; };
+		F1A71D0423F836C70067117D /* PRuleResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0023F836C70067117D /* PRuleResolver.swift */; };
+		F1A71D0623F836DB0067117D /* PRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0523F836DB0067117D /* PRule.swift */; };
+		F1A71D0723F836DB0067117D /* PRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0523F836DB0067117D /* PRule.swift */; };
+		F1A71D0823F836DB0067117D /* PRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0523F836DB0067117D /* PRule.swift */; };
+		F1A71D0923F836DB0067117D /* PRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0523F836DB0067117D /* PRule.swift */; };
+		F1A71D1A23F837150067117D /* AnyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D1923F837150067117D /* AnyRule.swift */; };
+		F1A71D1B23F837150067117D /* AnyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D1923F837150067117D /* AnyRule.swift */; };
+		F1A71D1C23F837150067117D /* AnyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D1923F837150067117D /* AnyRule.swift */; };
+		F1A71D1D23F837150067117D /* AnyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D1923F837150067117D /* AnyRule.swift */; };
+		F1A71D2323F838210067117D /* RuleMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D1E23F837D70067117D /* RuleMock.swift */; };
+		F1A71D2423F838220067117D /* RuleMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D1E23F837D70067117D /* RuleMock.swift */; };
+		F1A71D2523F838220067117D /* RuleMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D1E23F837D70067117D /* RuleMock.swift */; };
+		F1A71D2723F838590067117D /* ResolverMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D2623F838590067117D /* ResolverMock.swift */; };
+		F1A71D2823F838590067117D /* ResolverMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D2623F838590067117D /* ResolverMock.swift */; };
+		F1A71D2923F838590067117D /* ResolverMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D2623F838590067117D /* ResolverMock.swift */; };
 		FABED7821E959015224C34C7 /* PPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDFF7B452C60BCD2EA883DE /* PPlugin.swift */; };
 /* End PBXBuildFile section */
 
@@ -163,6 +181,11 @@
 		EC49A807EA6D57EAC7BF5AD6 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		EC7FB66C557127FA6A988797 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		F166F76200BCF6B6200CEBC8 /* Pods-Plug_watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plug_watchOS.release.xcconfig"; path = "Target Support Files/Pods-Plug_watchOS/Pods-Plug_watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		F1A71D0023F836C70067117D /* PRuleResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRuleResolver.swift; sourceTree = "<group>"; };
+		F1A71D0523F836DB0067117D /* PRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRule.swift; sourceTree = "<group>"; };
+		F1A71D1923F837150067117D /* AnyRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRule.swift; sourceTree = "<group>"; };
+		F1A71D1E23F837D70067117D /* RuleMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleMock.swift; sourceTree = "<group>"; };
+		F1A71D2623F838590067117D /* ResolverMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolverMock.swift; sourceTree = "<group>"; };
 		F7C6B275705C803AE34948CE /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		FE3138EEE6FF56AF3063C59F /* Plug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Plug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -259,7 +282,6 @@
 				7E5DB7A71F2218022641BA25 /* Pods-Plug_watchOS.debug.xcconfig */,
 				F166F76200BCF6B6200CEBC8 /* Pods-Plug_watchOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -302,6 +324,8 @@
 				0B3D467F416FCACAB3AFD2E8 /* PlugTests_iOS-Bridging-Header.h */,
 				BFC6E1D825BFEF19C286D55C /* PlugTests_macOS-Bridging-Header.h */,
 				ACA94E20FE7C305A9D06EC2C /* PlugTests_tvOS-Bridging-Header.h */,
+				F1A71D1E23F837D70067117D /* RuleMock.swift */,
+				F1A71D2623F838590067117D /* ResolverMock.swift */,
 			);
 			path = PlugTests;
 			sourceTree = "<group>";
@@ -355,6 +379,9 @@
 			children = (
 				31E40967E95E6B51D4BF2895 /* Info.plist */,
 				7CDFF7B452C60BCD2EA883DE /* PPlugin.swift */,
+				F1A71D0023F836C70067117D /* PRuleResolver.swift */,
+				F1A71D0523F836DB0067117D /* PRule.swift */,
+				F1A71D1923F837150067117D /* AnyRule.swift */,
 			);
 			path = Plug;
 			sourceTree = "<group>";
@@ -548,6 +575,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = EE59FFE427BE76E90FFB426F;
@@ -782,6 +810,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A71D0423F836C70067117D /* PRuleResolver.swift in Sources */,
+				F1A71D0923F836DB0067117D /* PRule.swift in Sources */,
+				F1A71D1D23F837150067117D /* AnyRule.swift in Sources */,
 				987964E21287000C75BC6234 /* PPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -790,6 +821,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A71D0223F836C70067117D /* PRuleResolver.swift in Sources */,
+				F1A71D0723F836DB0067117D /* PRule.swift in Sources */,
+				F1A71D1B23F837150067117D /* AnyRule.swift in Sources */,
 				059A944233FDB32332CEDD55 /* PPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -798,6 +832,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A71D0323F836C70067117D /* PRuleResolver.swift in Sources */,
+				F1A71D0823F836DB0067117D /* PRule.swift in Sources */,
+				F1A71D1C23F837150067117D /* AnyRule.swift in Sources */,
 				FABED7821E959015224C34C7 /* PPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -807,6 +844,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F96F013EFA1446118420E5 /* PluginTests.swift in Sources */,
+				F1A71D2523F838220067117D /* RuleMock.swift in Sources */,
+				F1A71D2723F838590067117D /* ResolverMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -814,6 +853,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A71D0123F836C70067117D /* PRuleResolver.swift in Sources */,
+				F1A71D0623F836DB0067117D /* PRule.swift in Sources */,
+				F1A71D1A23F837150067117D /* AnyRule.swift in Sources */,
 				40076F6ECF58094E8CDD310A /* PPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -823,6 +865,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6050D7833EC3213EBE98C567 /* PluginTests.swift in Sources */,
+				F1A71D2423F838220067117D /* RuleMock.swift in Sources */,
+				F1A71D2823F838590067117D /* ResolverMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,6 +884,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3D7F82BACC0DF19B10E1B93 /* PluginTests.swift in Sources */,
+				F1A71D2323F838210067117D /* RuleMock.swift in Sources */,
+				F1A71D2923F838590067117D /* ResolverMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

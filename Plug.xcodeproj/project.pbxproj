@@ -419,18 +419,34 @@
 			);
 			sourceTree = "<group>";
 		};
-		F2D060D728B27571785A1A24 /* Plug */ = {
+		F1A71D5B23F847180067117D /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				31E40967E95E6B51D4BF2895 /* Info.plist */,
-				7CDFF7B452C60BCD2EA883DE /* PPlugin.swift */,
-				F1A71D0023F836C70067117D /* PRuleResolver.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		F1A71D5C23F847220067117D /* Rules */ = {
+			isa = PBXGroup;
+			children = (
 				F1A71D0523F836DB0067117D /* PRule.swift */,
 				F1A71D1923F837150067117D /* AnyRule.swift */,
 				F1A71D2A23F83DC20067117D /* AtomRule.swift */,
 				F1A71D3323F840250067117D /* DisabledRule.swift */,
 				F1A71D3823F8407C0067117D /* EnabledRule.swift */,
+				7CDFF7B452C60BCD2EA883DE /* PPlugin.swift */,
 				F1A71D4E23F843E60067117D /* IdentifiedPlugin.swift */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
+		F2D060D728B27571785A1A24 /* Plug */ = {
+			isa = PBXGroup;
+			children = (
+				F1A71D5C23F847220067117D /* Rules */,
+				F1A71D5B23F847180067117D /* Plugins */,
+				31E40967E95E6B51D4BF2895 /* Info.plist */,
+				F1A71D0023F836C70067117D /* PRuleResolver.swift */,
 			);
 			path = Plug;
 			sourceTree = "<group>";

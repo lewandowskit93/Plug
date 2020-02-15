@@ -11,6 +11,6 @@ import XCTest
 
 public class EnabledRuleTests: XCTestCase {
     func testResolve_WhenCalled_ShouldReturnTrue() {
-        XCTAssertTrue(EnabledRule().resolve(with: ResolverMock()))
+        XCTAssertTrue(EnabledRule().resolve(with: ResolvingContextMock()))
     }
 }

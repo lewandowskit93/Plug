@@ -15,8 +15,8 @@ final class RuleMock: PRule {
         returnValue = value
     }
     
-    func resolve(with resolver: ResolverMock) -> Bool {
-        resolver.resolve()
+    func resolve(with context: ResolvingContextMock) -> Bool {
+        context.resolve()
         return returnValue
     }
 }

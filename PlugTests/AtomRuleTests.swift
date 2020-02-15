@@ -11,10 +11,10 @@ import XCTest
 
 public class AtomRuleTests: XCTestCase {
     func testResolve_WhenInitializedWithTrue_ShouldReturnTrue() {
-        XCTAssertTrue(AtomRule<ResolverMock>(true).resolve(with: ResolverMock()))
+        XCTAssertTrue(AtomRule(true).resolve(with: ResolvingContextMock()))
     }
     
     func testResolve_WhenInitializedWithFalse_ShouldReturnFalse() {
-        XCTAssertFalse(AtomRule<ResolverMock>(false).resolve(with: ResolverMock()))
+        XCTAssertFalse(AtomRule(false).resolve(with: ResolvingContextMock()))
     }
 }

@@ -11,6 +11,6 @@ import XCTest
 
 public class DisabledRuleTests: XCTestCase {
     func testResolve_WhenCalled_ShouldReturnFalse() {
-        XCTAssertFalse(DisabledRule().resolve(with: ResolverMock()))
+        XCTAssertFalse(DisabledRule().resolve(with: ResolvingContextMock()))
     }
 }

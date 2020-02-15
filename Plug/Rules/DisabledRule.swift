@@ -6,14 +6,14 @@
 //  Copyright © 2020 LionSoftware.org. All rights reserved.
 //
 
-public final class DisabledRule<Resolver: PRuleResolver>: PRule {
-    private let atom = AtomRule<Resolver>(false)
+public final class DisabledRule<Context: PRuleResolvingContext>: PRule {
+    private let atom = AtomRule<Context>(false)
     
     public init() {
         
     }
     
-    public func resolve(with resolver: Resolver) -> Bool {
-        return atom.resolve(with: resolver)
+    public func resolve(with context: Context) -> Bool {
+        return atom.resolve(with: context)
     }
 }

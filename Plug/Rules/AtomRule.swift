@@ -6,14 +6,14 @@
 //  Copyright © 2020 LionSoftware.org. All rights reserved.
 //
 
-public final class AtomRule<Resolver: PRuleResolver>: PRule {
+public final class AtomRule<Context: PRuleResolvingContext>: PRule {
     private let value: Bool
     
     public init(_ value: Bool) {
         self.value = value
     }
     
-    public func resolve(with resolver: Resolver) -> Bool {
+    public func resolve(with context: Context) -> Bool {
         return value
     }
 }

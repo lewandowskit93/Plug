@@ -34,10 +34,10 @@
 		D3D7F82BACC0DF19B10E1B93 /* AnyRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94919E61FEA9DB7F5AB586A2 /* AnyRuleTests.swift */; };
 		E11EC518067F5E38B972AA2E /* Pods_Plug_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD75422EE755A67E8FE9F29C /* Pods_Plug_tvOS.framework */; };
 		E7AE9AF235E541330617D61F /* Plug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3138EEE6FF56AF3063C59F /* Plug.framework */; };
-		F1A71D0123F836C70067117D /* PRuleResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0023F836C70067117D /* PRuleResolver.swift */; };
-		F1A71D0223F836C70067117D /* PRuleResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0023F836C70067117D /* PRuleResolver.swift */; };
-		F1A71D0323F836C70067117D /* PRuleResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0023F836C70067117D /* PRuleResolver.swift */; };
-		F1A71D0423F836C70067117D /* PRuleResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0023F836C70067117D /* PRuleResolver.swift */; };
+		F1A71D0123F836C70067117D /* PRuleResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0023F836C70067117D /* PRuleResolvingContext.swift */; };
+		F1A71D0223F836C70067117D /* PRuleResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0023F836C70067117D /* PRuleResolvingContext.swift */; };
+		F1A71D0323F836C70067117D /* PRuleResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0023F836C70067117D /* PRuleResolvingContext.swift */; };
+		F1A71D0423F836C70067117D /* PRuleResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0023F836C70067117D /* PRuleResolvingContext.swift */; };
 		F1A71D0623F836DB0067117D /* PRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0523F836DB0067117D /* PRule.swift */; };
 		F1A71D0723F836DB0067117D /* PRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0523F836DB0067117D /* PRule.swift */; };
 		F1A71D0823F836DB0067117D /* PRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D0523F836DB0067117D /* PRule.swift */; };
@@ -49,9 +49,9 @@
 		F1A71D2323F838210067117D /* RuleMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D1E23F837D70067117D /* RuleMock.swift */; };
 		F1A71D2423F838220067117D /* RuleMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D1E23F837D70067117D /* RuleMock.swift */; };
 		F1A71D2523F838220067117D /* RuleMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D1E23F837D70067117D /* RuleMock.swift */; };
-		F1A71D2723F838590067117D /* ResolverMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D2623F838590067117D /* ResolverMock.swift */; };
-		F1A71D2823F838590067117D /* ResolverMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D2623F838590067117D /* ResolverMock.swift */; };
-		F1A71D2923F838590067117D /* ResolverMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D2623F838590067117D /* ResolverMock.swift */; };
+		F1A71D2723F838590067117D /* ResolvingContextMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D2623F838590067117D /* ResolvingContextMock.swift */; };
+		F1A71D2823F838590067117D /* ResolvingContextMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D2623F838590067117D /* ResolvingContextMock.swift */; };
+		F1A71D2923F838590067117D /* ResolvingContextMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D2623F838590067117D /* ResolvingContextMock.swift */; };
 		F1A71D2B23F83DC20067117D /* AtomRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D2A23F83DC20067117D /* AtomRule.swift */; };
 		F1A71D2C23F83DC20067117D /* AtomRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D2A23F83DC20067117D /* AtomRule.swift */; };
 		F1A71D2D23F83DC20067117D /* AtomRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A71D2A23F83DC20067117D /* AtomRule.swift */; };
@@ -212,11 +212,11 @@
 		EC49A807EA6D57EAC7BF5AD6 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		EC7FB66C557127FA6A988797 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		F166F76200BCF6B6200CEBC8 /* Pods-Plug_watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plug_watchOS.release.xcconfig"; path = "Target Support Files/Pods-Plug_watchOS/Pods-Plug_watchOS.release.xcconfig"; sourceTree = "<group>"; };
-		F1A71D0023F836C70067117D /* PRuleResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRuleResolver.swift; sourceTree = "<group>"; };
+		F1A71D0023F836C70067117D /* PRuleResolvingContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRuleResolvingContext.swift; sourceTree = "<group>"; };
 		F1A71D0523F836DB0067117D /* PRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRule.swift; sourceTree = "<group>"; };
 		F1A71D1923F837150067117D /* AnyRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRule.swift; sourceTree = "<group>"; };
 		F1A71D1E23F837D70067117D /* RuleMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleMock.swift; sourceTree = "<group>"; };
-		F1A71D2623F838590067117D /* ResolverMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolverMock.swift; sourceTree = "<group>"; };
+		F1A71D2623F838590067117D /* ResolvingContextMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolvingContextMock.swift; sourceTree = "<group>"; };
 		F1A71D2A23F83DC20067117D /* AtomRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomRule.swift; sourceTree = "<group>"; };
 		F1A71D2F23F83E6D0067117D /* AtomRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomRuleTests.swift; sourceTree = "<group>"; };
 		F1A71D3323F840250067117D /* DisabledRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisabledRule.swift; sourceTree = "<group>"; };
@@ -365,7 +365,7 @@
 				BFC6E1D825BFEF19C286D55C /* PlugTests_macOS-Bridging-Header.h */,
 				ACA94E20FE7C305A9D06EC2C /* PlugTests_tvOS-Bridging-Header.h */,
 				F1A71D1E23F837D70067117D /* RuleMock.swift */,
-				F1A71D2623F838590067117D /* ResolverMock.swift */,
+				F1A71D2623F838590067117D /* ResolvingContextMock.swift */,
 				F1A71D2F23F83E6D0067117D /* AtomRuleTests.swift */,
 				F1A71D3D23F8411A0067117D /* DisabledRuleTests.swift */,
 				F1A71D4123F8416E0067117D /* EnabledRuleTests.swift */,
@@ -446,7 +446,7 @@
 				F1A71D5C23F847220067117D /* Rules */,
 				F1A71D5B23F847180067117D /* Plugins */,
 				31E40967E95E6B51D4BF2895 /* Info.plist */,
-				F1A71D0023F836C70067117D /* PRuleResolver.swift */,
+				F1A71D0023F836C70067117D /* PRuleResolvingContext.swift */,
 			);
 			path = Plug;
 			sourceTree = "<group>";
@@ -877,7 +877,7 @@
 			files = (
 				F1A71D2E23F83DC20067117D /* AtomRule.swift in Sources */,
 				F1A71D3723F840250067117D /* DisabledRule.swift in Sources */,
-				F1A71D0423F836C70067117D /* PRuleResolver.swift in Sources */,
+				F1A71D0423F836C70067117D /* PRuleResolvingContext.swift in Sources */,
 				F1A71D0923F836DB0067117D /* PRule.swift in Sources */,
 				F1A71D3C23F8407C0067117D /* EnabledRule.swift in Sources */,
 				F1A71D5223F843E60067117D /* IdentifiedPlugin.swift in Sources */,
@@ -892,7 +892,7 @@
 			files = (
 				F1A71D2C23F83DC20067117D /* AtomRule.swift in Sources */,
 				F1A71D3523F840250067117D /* DisabledRule.swift in Sources */,
-				F1A71D0223F836C70067117D /* PRuleResolver.swift in Sources */,
+				F1A71D0223F836C70067117D /* PRuleResolvingContext.swift in Sources */,
 				F1A71D0723F836DB0067117D /* PRule.swift in Sources */,
 				F1A71D3A23F8407C0067117D /* EnabledRule.swift in Sources */,
 				F1A71D5023F843E60067117D /* IdentifiedPlugin.swift in Sources */,
@@ -907,7 +907,7 @@
 			files = (
 				F1A71D2D23F83DC20067117D /* AtomRule.swift in Sources */,
 				F1A71D3623F840250067117D /* DisabledRule.swift in Sources */,
-				F1A71D0323F836C70067117D /* PRuleResolver.swift in Sources */,
+				F1A71D0323F836C70067117D /* PRuleResolvingContext.swift in Sources */,
 				F1A71D0823F836DB0067117D /* PRule.swift in Sources */,
 				F1A71D3B23F8407C0067117D /* EnabledRule.swift in Sources */,
 				F1A71D5123F843E60067117D /* IdentifiedPlugin.swift in Sources */,
@@ -927,7 +927,7 @@
 				F1A71D5823F8450D0067117D /* PluginMock.swift in Sources */,
 				F1A71D3E23F8411A0067117D /* DisabledRuleTests.swift in Sources */,
 				F1A71D3023F83E6D0067117D /* AtomRuleTests.swift in Sources */,
-				F1A71D2723F838590067117D /* ResolverMock.swift in Sources */,
+				F1A71D2723F838590067117D /* ResolvingContextMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,7 +937,7 @@
 			files = (
 				F1A71D2B23F83DC20067117D /* AtomRule.swift in Sources */,
 				F1A71D3423F840250067117D /* DisabledRule.swift in Sources */,
-				F1A71D0123F836C70067117D /* PRuleResolver.swift in Sources */,
+				F1A71D0123F836C70067117D /* PRuleResolvingContext.swift in Sources */,
 				F1A71D0623F836DB0067117D /* PRule.swift in Sources */,
 				F1A71D3923F8407C0067117D /* EnabledRule.swift in Sources */,
 				F1A71D4F23F843E60067117D /* IdentifiedPlugin.swift in Sources */,
@@ -957,7 +957,7 @@
 				F1A71D5923F8450D0067117D /* PluginMock.swift in Sources */,
 				F1A71D3F23F8411A0067117D /* DisabledRuleTests.swift in Sources */,
 				F1A71D3123F83E6D0067117D /* AtomRuleTests.swift in Sources */,
-				F1A71D2823F838590067117D /* ResolverMock.swift in Sources */,
+				F1A71D2823F838590067117D /* ResolvingContextMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -981,7 +981,7 @@
 				F1A71D5A23F8450D0067117D /* PluginMock.swift in Sources */,
 				F1A71D4023F8411A0067117D /* DisabledRuleTests.swift in Sources */,
 				F1A71D3223F83E6D0067117D /* AtomRuleTests.swift in Sources */,
-				F1A71D2923F838590067117D /* ResolverMock.swift in Sources */,
+				F1A71D2923F838590067117D /* ResolvingContextMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

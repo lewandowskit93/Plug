@@ -7,7 +7,7 @@
 //
 
 public protocol PRule: class {
-    associatedtype Resolver: PRuleResolver
+    associatedtype Context: PRuleResolvingContext
     
-    func resolve(with: Resolver) -> Bool
+    func resolve(with: Context) -> Bool
 }

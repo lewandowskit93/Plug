@@ -6,38 +6,38 @@
 //  Copyright © 2020 LionSoftware.org. All rights reserved.
 //
 
-public final class AnyRule<Resolver: PRuleResolver>: PRule {
-    private let underlying: _AnyRuleBoxBase<Resolver>
+public final class AnyRule<Context: PRuleResolvingContext>: PRule {
+    private let underlying: _AnyRuleBoxBase<Context>
 
-    public init<Rule: PRule>(_ rule: Rule) where Rule.Resolver == Resolver {
+    public init<Rule: PRule>(_ rule: Rule) where Rule.Context == Context {
         self.underlying = _AnyRuleBox(rule)
     }
     
-    public func resolve(with resolver: Resolver) -> Bool {
-        return underlying.resolve(with: resolver)
+    public func resolve(with context: Context) -> Bool {
+        return underlying.resolve(with: context)
     }
 }
 
 public extension PRule {
-    func any() -> AnyRule<Resolver> {
+    func any() -> AnyRule<Context> {
         return AnyRule(self)
     }
 }
 
-private final class _AnyRuleBox<Rule: PRule>: _AnyRuleBoxBase<Rule.Resolver> {
+private final class _AnyRuleBox<Rule: PRule>: _AnyRuleBoxBase<Rule.Context> {
     private let underlying: Rule
     
     init(_ rule: Rule) {
         self.underlying = rule
     }
     
-    override func resolve(with resolver: Resolver) -> Bool {
-        return underlying.resolve(with: resolver)
+    override func resolve(with context: Context) -> Bool {
+        return underlying.resolve(with: context)
     }
 }
 
-private class _AnyRuleBoxBase<Resolver: PRuleResolver>: PRule {
-    func resolve(with: Resolver) -> Bool {
+private class _AnyRuleBoxBase<Context: PRuleResolvingContext>: PRule {
+    func resolve(with: Context) -> Bool {
         fatalError("Should be overriden")
     }
 }

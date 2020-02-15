@@ -1,5 +1,5 @@
 //
-//  ResolverMock.swift
+//  ResolvingContextMock.swift
 //  Plug
 //
 //  Created by Tomasz Lewandowski on 15/02/2020.
@@ -8,7 +8,7 @@
 
 import Plug
 
-final class ResolverMock: PRuleResolver {
+final class ResolvingContextMock: PRuleResolvingContext {
     var resolveCalled = false
     
     func resolve() {

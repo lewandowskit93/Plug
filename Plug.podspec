@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
   spec.version      = "0.0.1"
   spec.summary      = "Plug a lightweight, multiplatform plugin management tool written in pure Swift."
   spec.description = <<-DESC
-  Plug is a lightweight, multiplatform plugin management tool written in pure Swift. It allows to define rules at wich given plugins are available.
+  Plug is a lightweight, multiplatform plugin management tool written in pure Swift. It allows to define rules at which given plugins are available.
   DESC
   spec.homepage     = "https://github.com/lewandowskit93/Plug"
   spec.license      = { :type => "MIT", :file => "LICENSE.md" }

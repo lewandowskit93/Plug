@@ -74,120 +74,41 @@ let package = Package(
 
 ## Overview
 
-Here is a quick overview of functionalities and concepts used in **Discoverer**.
+Here is a quick overview of functionalities and concepts used in **Plug**.
 
-### Injection
+### Plugin
 
-**Injection** is an enum which represents single Injection. It can be one of:
-- **Singleton** - returns same instance everytime e.g.: 
-```swift
-Injectable<PFoo>.singleton(Foo())
-```
-- **LazySingleton** - if there is no instance it uses factory to create one, then it returns this instance everytime e.g.: 
-```swift
-Injectable<PFoo>.lazySingleton(nil, { Foo() })
-```
-- **Factory** - returns new instance everytime e.g.: 
-```swift
-Injectable<PFoo>.factory({ Foo() })
-```
+**Plugin** is anything that implements **PPlugin** protocol. You can define what your plugins are and what they do. As an example there is *ViewPlugin* defined for you. This plugin delivers a single SwiftUI view.
 
-### Injector
+### RuleResolvingContext
 
-**Injector** manages injected services. It grants access to the service by providing:
-- subscript - returning service as optional (nil if not registered) e.g.:
-```swift
-injector[PFoo.self]
-```
-- getter - returning service and throwing error if not registered e.g.: 
-```swift
-injector.get(PFoo.self)
-```
+**RuleResolvingContext** is anything that implements **PRuleResolvingContext**. Everything in the Plug is generic over PRuleResolvingContext. It can provide additional information to decide if the plugins are enabled.
 
-### Injected
-**Injected** is a property wrapper that marks a property as injected with the service provided by given Injector.
-Example usage:
-```swift
-@Injected var foo: PFoo
-```
-Injected also allows you to specify which container to use as follows:
-```swift
-@Injected(injector: Environment.services) var serviceA: PServiceA
-```
-### Registered
-**Registered** is a property wrapper that marks an injection as registered in given Injector.
-Example usage:
-```swift
-@Registered
-var serviceAInjection = Injection<PServiceA>.singleton(ServiceA())
-```
-Registered also allows you to specify which container to use as follows:
-```swift
-@Registered(inInjector: Environment.services)
-var serviceAInjection = Injection<PServiceA>.singleton(ServiceA())
-```
+### Rule
+
+**Rule** decides whether plugins should be returned or not depending on the context. You can define your own rules by implementing **PRule** protocol
+
+### PluginPoint
+
+**PluginPoint** defines a single slot to which plugins can be attached. Single plugin point can have multiple plugins and rules that describes them. It has a hierarchical structure meaning that a plugin point can have *children* plugin points. The rules applied to a plugin point are also applied to it's children.
+
 ## Example
 
-Given the environment
+This is an example definition of plugin point which allows two plugin features to exist if they are enabled in FooContext.
+
 ```swift
-struct Environment {
-    static var services: Injector = Injector()
-    static var repositories: Injector = Injector()
-}
-```
-
-We could define following services and repositories: 
-```swift
-protocol PServiceA {
-    func foo()
-}
-
-class ServiceA: PServiceA {
-    func foo() {
-        print("Service A")
-    }
-}
-
-protocol PRepositoryB {
-    func foo() -> String
-}
-
-class RepositoryB: PRepositoryB {
-    func foo() -> String {
-        return "foo"
-    }
-}
-```
-
-Then configure the injector as follows:
-```swift
-struct Configurator {
-    static func configure(repositories: Injector, services: Injector) throws {
-        _ = try? repositories
-            .register(as: PRepositoryB.self, injectable: .singleton(RepositoryB()))
-        _ = try? services
-            .register(as: PServiceA.self, injectable: .factory({ ServiceA() }))
-    }
-}
-```
-or:
-```swift
-struct Configurator {
-    @Registered(inInjector: Environment.repositories)
-    var repositoryBInjection = Injection<PRepositoryB>.factory({ RepositoryB() })
-
-    @Registered(inInjector: Environment.services)
-    var serviceAInjection = Injection<PServiceA>.singleton(ServiceA())
-}
-```
-*The second approach requires creating an instance of Configurator, so that injections are registered.*
-
-Then inject dependencies into ViewModel:
-```swift
-struct FooViewModel {
-    @Injected(injector: Environment.services) var serviceA: PServiceA
-    @Injected(injector: Environment.repositories) var repositoryB: PRepositoryB
-}
+var pluginPoint = PluginPointBuilder()
+    .add(child: PluginPointBuilder()
+        .add(plugin: pluginFactory.feature1Plugin())
+        .add(rule: FeatureEnabledRule(id: "feature_1").any())
+        .build()
+    )
+    .add(child: PluginPointBuilder()
+        .add(plugin: pluginFactory.feature2Plugin())
+        .add(rule: FeatureEnabledRule(id: "feature_2").any())
+        .build()
+    ).build()
+var availablePlugins = pluginPoint.getAvailablePlugins(context: FooContext())
 ```
 
 For more detailed example please see the source code.
@@ -200,4 +121,4 @@ If you created some new feature or fixed a bug you can create a pull request. Pl
 
 ## License
 
-Discoverer is released under an MIT license. See [License.md](LICENSE.md) for more information.
+Plug is released under an MIT license. See [License.md](LICENSE.md) for more information.

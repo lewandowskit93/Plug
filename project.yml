@@ -1,0 +1,127 @@
+name: Plug
+attributes:
+  ORGANIZATIONNAME: LionSoftware.org
+options:
+  createIntermediateGroups: true
+  xcodeVersion: 11.3
+  groupSortPosition: top
+  deploymentTarget:
+    iOS: "8.0"
+    macOS: "10.10"
+    watchOS: "2.0"
+    tvOS: "9.0"
+configs:
+  Debug: debug
+  Release: release
+fileGroups:
+  - Configurations
+  - Package.swift
+configFiles:
+  Debug: Configurations/Debug.xcconfig
+  Release: Configurations/Release.xcconfig
+schemes:
+  Plug_iOS:
+    build:
+      targets:
+        Plug_iOS: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets: [PlugTests_iOS]
+      gatherCoverageData: true
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+  Plug_macOS:
+    build:
+      targets:
+        Plug_macOS: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets: [PlugTests_macOS]
+      gatherCoverageData: true
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+  Plug_watchOS:
+    build:
+      targets:
+        Plug_watchOS: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets: []
+      gatherCoverageData: true
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+  Plug_tvOS:
+    build:
+      targets:
+        Plug_tvOS: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets: [PlugTests_tvOS]
+      gatherCoverageData: true
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+
+targets:
+  Plug:
+    type: framework
+    platform: [macOS, iOS, tvOS, watchOS]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(PLUG_BUNDLE_IDENTIFIER)
+        PROVISIONING_PROFILE_SPECIFIER: $(PLUG_PROVISIONING_PROFILE_SPECIFIER)
+    sources:
+      - path: Plug
+  PlugTests:
+    type: bundle.unit-test
+    platform: [macOS, iOS, tvOS]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.lionsoftware.plug.tests
+        # empty specifier resolves to "Automatic"
+        PROVISIONING_PROFILE_SPECIFIER: 
+    sources:
+      - path: PlugTests
+    dependencies:
+      - target: Plug_macOS
+  Example:
+    type: application
+    platform: macOS
+    deploymentTarget: 10.15
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.lionsoftware.plug.example
+        # empty specifier resolves to "Automatic"
+        PROVISIONING_PROFILE_SPECIFIER:
+        CURRENT_PROJECT_VERSION: 1
+    sources:
+      - path: Example
+    dependencies:
+      - target: Plug_macOS
+    postBuildScripts:
+      - script: |
+                "${PODS_ROOT}/SwiftLint/swiftlint"
+        name: SwiftLint

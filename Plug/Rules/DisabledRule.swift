@@ -6,9 +6,11 @@
 //  Copyright © 2020 LionSoftware.org. All rights reserved.
 //
 
+/// Rule that is always false
 public final class DisabledRule<Context: PRuleResolvingContext>: PRule {
     private let atom = AtomRule<Context>(false)
     
+    /// Creates the rule
     public init() {
         
     }

@@ -6,9 +6,11 @@
 //  Copyright © 2020 LionSoftware.org. All rights reserved.
 //
 
+/// Rule that is always true
 public final class EnabledRule<Context: PRuleResolvingContext>: PRule {
     private let atom = AtomRule<Context>(true)
     
+    /// Creates the rule
     public init() {
         
     }

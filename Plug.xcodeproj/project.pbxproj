@@ -185,6 +185,7 @@
 		EEFF85A6C36D51CE9B03D27B /* AnyOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BEE4ED0ABAD7EF943EC1C /* AnyOfRuleTests.swift */; };
 		F0D92126174E1F3C351351B9 /* PRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AB953D44967E73DA60F123 /* PRule.swift */; };
 		F18A7BFA23F9699C009DDB1B /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7BF923F9699C009DDB1B /* LazyView.swift */; };
+		F18A7BFC23F974B7009DDB1B /* ContentVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7BFB23F974B7009DDB1B /* ContentVIew.swift */; };
 		F3A5A061DC9BB39CCC01D12D /* Builder+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB627885008C2F221F0806CD /* Builder+Build.swift */; };
 		F440DEF4AAF64C3E826D3E01 /* PRuleResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E1DEB6B505B9E835C5B00 /* PRuleResolvingContext.swift */; };
 		F626362EFC5518A7EC804CB2 /* IdentifiedPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6152275853AF67DE1B8BB2A0 /* IdentifiedPlugin.swift */; };
@@ -366,6 +367,7 @@
 		EC49A807EA6D57EAC7BF5AD6 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		F057259D382AA3D8B4603D93 /* SearchPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlugin.swift; sourceTree = "<group>"; };
 		F18A7BF923F9699C009DDB1B /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		F18A7BFB23F974B7009DDB1B /* ContentVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentVIew.swift; sourceTree = "<group>"; };
 		F37A1F6ACA2975CD6489EE00 /* SearchViewContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewContext.swift; sourceTree = "<group>"; };
 		FB5A89F670E1DB9502E77394 /* Pods_PlugTests_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlugTests_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD8101E22259994D3BFEE62 /* Pods-Plug_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plug_macOS.debug.xcconfig"; path = "Target Support Files/Pods-Plug_macOS/Pods-Plug_macOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -575,6 +577,7 @@
 				30D087B9B8EAA6A8B97BA2C8 /* MainMenu.swift */,
 				9303E579E1ACA0CD9DE3BBAD /* SearchView.swift */,
 				F18A7BF923F9699C009DDB1B /* LazyView.swift */,
+				F18A7BFB23F974B7009DDB1B /* ContentVIew.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1295,6 +1298,7 @@
 				943D5BB5C3A0BEDAAE21D8A6 /* HelloDSLView.swift in Sources */,
 				B40AAB8F1784584D4C734016 /* HelloPlugView.swift in Sources */,
 				99AAFA45DDD0820E3921EB9A /* MainMenu.swift in Sources */,
+				F18A7BFC23F974B7009DDB1B /* ContentVIew.swift in Sources */,
 				F18A7BFA23F9699C009DDB1B /* LazyView.swift in Sources */,
 				4B33F218A1BC9C7B7688EE24 /* MainMenuContext.swift in Sources */,
 				C6C67EB5F41D2D74C1E49EA1 /* MainMenuPluginsFactory.swift in Sources */,

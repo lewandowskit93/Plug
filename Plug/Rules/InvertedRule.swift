@@ -6,9 +6,11 @@
 //  Copyright © 2020 LionSoftware.org. All rights reserved.
 //
 
+/// Rule that negates output of underlying rule
 public final class InvertedRule<Context: PRuleResolvingContext>: PRule {
     private let rule: AnyRule<Context>
     
+    /// Creates the rule
     public init(_ rule: AnyRule<Context>) {
         self.rule = rule
     }

@@ -6,6 +6,7 @@
 //  Copyright © 2020 LionSoftware.org. All rights reserved.
 //
 
+/// Represents an abstract plugin. The plugin is created by implementing this protocol.
 public protocol PPlugin: class {
 
 }

@@ -6,9 +6,11 @@
 //  Copyright © 2020 LionSoftware.org. All rights reserved.
 //
 
+/// Type-erased rule wrapper
 public final class AnyRule<Context: PRuleResolvingContext>: PRule {
     private let underlying: _AnyRuleBoxBase<Context>
 
+    /// Creates the rule
     public init<Rule: PRule>(_ rule: Rule) where Rule.Context == Context {
         self.underlying = _AnyRuleBox(rule)
     }

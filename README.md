@@ -102,7 +102,7 @@ public final class ViewPlugin<V: View>: PPlugin {
 ### Rule
 
 **Rule** decides whether plugins should be returned or not depending on the context. You can define your own rules by implementing **PRule** protocol.
-There are a few rules available for you: *AtomRule*, *EnabledRule*, *DisabledRule*, *AnyRule*.
+There are a few rules available for you: *AtomRule*, *EnabledRule*, *DisabledRule*, *InvertedRule*, *AllOfRule*, *AnyOfRule*, *NoneOfRule*, *AnyRule*.
 
 ### PluginPoint
 

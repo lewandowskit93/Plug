@@ -10,15 +10,24 @@ import SwiftUI
 import Plug
 
 struct MainMenuPluginsFactory {
-    func helloWorldPlugin() -> IdentifiedPlugin<ViewPlugin<AnyView>> {
+    func helloPlugPlugin() -> IdentifiedPlugin<ViewPlugin<AnyView>> {
         return IdentifiedPlugin(
-            id: "hello",
+            id: "NON-DSL",
             wrappedValue: ViewPlugin {
-                return AnyView(HelloWorldView())
+                return AnyView(NavigationLink(destination: DSLMenu()) { HelloPlugView() })
             }
         )
     }
     
+    func helloDSLPlugin() -> IdentifiedPlugin<ViewPlugin<AnyView>> {
+        return IdentifiedPlugin(
+            id: "DSL",
+            wrappedValue: ViewPlugin {
+                return AnyView(NavigationLink(destination: MainMenu()) { HelloDSLView() })
+            }
+        )
+    }
+
     func feature1Plugin() -> IdentifiedPlugin<ViewPlugin<AnyView>> {
         return featurePlugin(id: "feature_1", title: "Feature 1")
     }

@@ -47,7 +47,7 @@ github "lewandowskit93/Plug"
 
 To install Plug using **Swift Package Manager** go through following steps:
 
-1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.0.1") ```
+1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.1.0") ```
 2. Add following target dependency in your **Package.swift** ``` dependencies: ["Plug"]) ```
 
 For instance this is how it might look like:
@@ -62,7 +62,7 @@ let package = Package(
             targets: ["YourLibrary"])
     ],
     dependencies: [
-        .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.0.1")
+        .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.1.0")
     ],
     targets: [
         .target(
@@ -101,11 +101,31 @@ public final class ViewPlugin<V: View>: PPlugin {
 
 ### Rule
 
-**Rule** decides whether plugins should be returned or not depending on the context. You can define your own rules by implementing **PRule** protocol
+**Rule** decides whether plugins should be returned or not depending on the context. You can define your own rules by implementing **PRule** protocol.
+There are a few rules available for you: *AtomRule*, *EnabledRule*, *DisabledRule*, *InvertedRule*, *AllOfRule*, *AnyOfRule*, *NoneOfRule*, *AnyRule*.
 
 ### PluginPoint
 
-**PluginPoint** defines a single slot to which plugins can be attached. Single plugin point can have multiple plugins and rules that describes them. It has a hierarchical structure meaning that a plugin point can have *children* plugin points. The rules applied to a plugin point are also applied to it's children.
+**PluginPoint** defines a single slot to which plugins can be attached. Single plugin point can have multiple plugins and rules that describes them.
+It has a hierarchical structure meaning that a plugin point can have *children* plugin points.
+The rules applied to a plugin point are also applied to it's children. Plugin points can be built with **PluginPointBuilder**
+
+### DSL
+Plug defines DSL to shorten building of plugin points. Available operators are:
+- Adding plugin with operator: *Builder <+ Plugin*
+- Removign plugin with operator: *Builder <- Plugin*
+- Adding rule with operator: *Builder §+ Rule*
+- Removing rule with operator: *Builder §- Rule*
+- Adding child with operator: *Builder |+ PluginPoint*
+- Removing child with operator: *Builder |- PluginPoint*
+- Finalize building with operator: *Builder^*
+
+There are also operators available for rules building:
+- Inverting a rule: *!AnyRule*
+- AllOfRule: *&&[AnyRule]*
+- NoneOfRule: *~~[AnyRule]*
+- AnyOfRule: *||[AnyRule]*
+
 
 ## Example
 
@@ -123,6 +143,26 @@ var pluginPoint = PluginPointBuilder()
         .add(rule: FeatureEnabledRule(id: "feature_2").any())
         .build()
     ).build()
+var availablePlugins = pluginPoint.getAvailablePlugins(context: FooContext())
+```
+
+The same plugin point could be defined using DSL as follows:
+
+
+```swift
+var pluginPoint = (
+        PluginPointBuilder()
+        |+ (
+            PluginPointBuilder()
+            <+ pluginFactory.feature1Plugin()
+            §+ FeatureEnabledRule(id: "feature_1").any()
+           )^
+        |+ (
+            PluginPointBuilder()
+            <+ pluginFactory.feature2Plugin()
+            §+ FeatureEnabledRule(id: "feature_2").any()
+           )^
+    )^
 var availablePlugins = pluginPoint.getAvailablePlugins(context: FooContext())
 ```
 

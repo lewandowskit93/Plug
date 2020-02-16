@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+## 0.1.0
+- Add rules: InvertedRule, AllOfRule, AnyOfRule, NoneOfRule
+- Added Builder DSL
+- Added Rules DSL
+
 ## 0.0.1
 - Available plugins: PPlugin, IdentifiedPlugin
 - Available rules: PRule, AtomRule, EnabledRule, DisabledRule, AnyRule

@@ -109,8 +109,8 @@ targets:
       - target: Plug_macOS
   Example:
     type: application
-    platform: macOS
-    deploymentTarget: 10.15
+    platform: iOS
+    deploymentTarget: 13.0
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: org.lionsoftware.plug.example
@@ -120,7 +120,7 @@ targets:
     sources:
       - path: Example
     dependencies:
-      - target: Plug_macOS
+      - target: Plug_iOS
     postBuildScripts:
       - script: |
                 "${PODS_ROOT}/SwiftLint/swiftlint"

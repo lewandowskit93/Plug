@@ -46,11 +46,9 @@ struct MainMenu: View {
     }
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(pluginPoint.getAvailablePlugins(context: MainMenuContext())) { plugin in
-                    return plugin.plugin.view
-                }
+        List {
+            ForEach(pluginPoint.getAvailablePlugins(context: MainMenuContext())) { plugin in
+                return plugin.plugin.view
             }
         }
     }

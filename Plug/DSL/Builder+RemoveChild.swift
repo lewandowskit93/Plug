@@ -8,6 +8,8 @@
 
 infix operator |-: BuildingPrecedenceGroup
 
-@discardableResult public func |- <Context: PRuleResolvingContext, Plugin: PPlugin>(lhs: PluginPointBuilder<Context, Plugin>, rhs: PluginPoint<Context, Plugin>) -> PluginPointBuilder<Context, Plugin> {
+@discardableResult public func |- <Context: PRuleResolvingContext, Plugin: PPlugin>(
+    lhs: PluginPointBuilder<Context, Plugin>,
+    rhs: PluginPoint<Context, Plugin>) -> PluginPointBuilder<Context, Plugin> {
     return lhs.remove(child: rhs)
 }

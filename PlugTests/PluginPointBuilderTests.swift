@@ -16,6 +16,7 @@ public class PluginPointBuilderTests: XCTestCase {
         sut = PluginPointBuilder()
     }
     
+    // swiftlint:disable function_body_length
     func testBuilding_WhenCalledAfterSetOfOperations_ShouldReturnCorrectPluginPoint() {
         let p1 = PluginMock()
         let p2 = PluginMock()

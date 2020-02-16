@@ -21,4 +21,3 @@ public class IdentifiablePluginTests: XCTestCase {
         XCTAssertTrue(mock === sut.plugin)
     }
 }
-

@@ -8,6 +8,8 @@
 
 infix operator §+: BuildingPrecedenceGroup
 
-@discardableResult public func §+ <Context: PRuleResolvingContext, Plugin: PPlugin>(lhs: PluginPointBuilder<Context, Plugin>, rhs: AnyRule<Context>) -> PluginPointBuilder<Context, Plugin> {
+@discardableResult public func §+ <Context: PRuleResolvingContext, Plugin: PPlugin>(
+    lhs: PluginPointBuilder<Context, Plugin>,
+    rhs: AnyRule<Context>) -> PluginPointBuilder<Context, Plugin> {
     return lhs.add(rule: rhs)
 }

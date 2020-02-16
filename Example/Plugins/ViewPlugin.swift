@@ -20,4 +20,3 @@ public final class ViewPlugin<V: View>: PPlugin {
         return builder()
     }
 }
-

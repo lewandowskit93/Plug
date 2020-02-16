@@ -106,9 +106,9 @@ There are a few rules available for you: *AtomRule*, *EnabledRule*, *DisabledRul
 
 ### PluginPoint
 
-**PluginPoint** defines a single slot to which plugins can be attached. It is usually built with **PluginPointBuilder**. Single plugin point can have multiple plugins and rules that describes them.
+**PluginPoint** defines a single slot to which plugins can be attached. Single plugin point can have multiple plugins and rules that describes them.
 It has a hierarchical structure meaning that a plugin point can have *children* plugin points.
-The rules applied to a plugin point are also applied to it's children. Plugin points can be
+The rules applied to a plugin point are also applied to it's children. Plugin points can be built with **PluginPointBuilder**
 
 ### DSL
 Plug defines DSL to shorten building of plugin points. Available operators are:

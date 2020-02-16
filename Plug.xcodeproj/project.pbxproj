@@ -159,6 +159,25 @@
 		F18A7B8923F8EA1E009DDB1B /* Builder+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8723F8EA1E009DDB1B /* Builder+Build.swift */; };
 		F18A7B8A23F8EA1E009DDB1B /* Builder+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8723F8EA1E009DDB1B /* Builder+Build.swift */; };
 		F18A7B8B23F8EA1E009DDB1B /* Builder+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8723F8EA1E009DDB1B /* Builder+Build.swift */; };
+		F18A7B8D23F8EDA1009DDB1B /* Rule+Negate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8C23F8EDA1009DDB1B /* Rule+Negate.swift */; };
+		F18A7B8E23F8EDA1009DDB1B /* Rule+Negate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8C23F8EDA1009DDB1B /* Rule+Negate.swift */; };
+		F18A7B8F23F8EDA1009DDB1B /* Rule+Negate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8C23F8EDA1009DDB1B /* Rule+Negate.swift */; };
+		F18A7B9023F8EDA1009DDB1B /* Rule+Negate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8C23F8EDA1009DDB1B /* Rule+Negate.swift */; };
+		F18A7B9623F8EE3D009DDB1B /* RuleDSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B9123F8EE24009DDB1B /* RuleDSLTests.swift */; };
+		F18A7B9723F8EE3D009DDB1B /* RuleDSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B9123F8EE24009DDB1B /* RuleDSLTests.swift */; };
+		F18A7B9823F8EE3E009DDB1B /* RuleDSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B9123F8EE24009DDB1B /* RuleDSLTests.swift */; };
+		F18A7B9A23F8EE98009DDB1B /* Rule+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B9923F8EE98009DDB1B /* Rule+All.swift */; };
+		F18A7B9B23F8EE98009DDB1B /* Rule+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B9923F8EE98009DDB1B /* Rule+All.swift */; };
+		F18A7B9C23F8EE98009DDB1B /* Rule+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B9923F8EE98009DDB1B /* Rule+All.swift */; };
+		F18A7B9D23F8EE98009DDB1B /* Rule+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B9923F8EE98009DDB1B /* Rule+All.swift */; };
+		F18A7BA023F8EEA9009DDB1B /* Rule+None.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B9F23F8EEA9009DDB1B /* Rule+None.swift */; };
+		F18A7BA123F8EEA9009DDB1B /* Rule+None.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B9F23F8EEA9009DDB1B /* Rule+None.swift */; };
+		F18A7BA223F8EEA9009DDB1B /* Rule+None.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B9F23F8EEA9009DDB1B /* Rule+None.swift */; };
+		F18A7BA323F8EEA9009DDB1B /* Rule+None.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B9F23F8EEA9009DDB1B /* Rule+None.swift */; };
+		F18A7BA523F8EEB4009DDB1B /* Rule+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7BA423F8EEB4009DDB1B /* Rule+Any.swift */; };
+		F18A7BA623F8EEB4009DDB1B /* Rule+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7BA423F8EEB4009DDB1B /* Rule+Any.swift */; };
+		F18A7BA723F8EEB4009DDB1B /* Rule+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7BA423F8EEB4009DDB1B /* Rule+Any.swift */; };
+		F18A7BA823F8EEB4009DDB1B /* Rule+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7BA423F8EEB4009DDB1B /* Rule+Any.swift */; };
 		F440DEF4AAF64C3E826D3E01 /* PRuleResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E1DEB6B505B9E835C5B00 /* PRuleResolvingContext.swift */; };
 		F626362EFC5518A7EC804CB2 /* IdentifiedPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6152275853AF67DE1B8BB2A0 /* IdentifiedPlugin.swift */; };
 /* End PBXBuildFile section */
@@ -325,6 +344,11 @@
 		F18A7B7D23F8E61A009DDB1B /* Builder+RemoveChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+RemoveChild.swift"; sourceTree = "<group>"; };
 		F18A7B8223F8E715009DDB1B /* PrecedenceGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecedenceGroup.swift; sourceTree = "<group>"; };
 		F18A7B8723F8EA1E009DDB1B /* Builder+Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+Build.swift"; sourceTree = "<group>"; };
+		F18A7B8C23F8EDA1009DDB1B /* Rule+Negate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+Negate.swift"; sourceTree = "<group>"; };
+		F18A7B9123F8EE24009DDB1B /* RuleDSLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleDSLTests.swift; sourceTree = "<group>"; };
+		F18A7B9923F8EE98009DDB1B /* Rule+All.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+All.swift"; sourceTree = "<group>"; };
+		F18A7B9F23F8EEA9009DDB1B /* Rule+None.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+None.swift"; sourceTree = "<group>"; };
+		F18A7BA423F8EEB4009DDB1B /* Rule+Any.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+Any.swift"; sourceTree = "<group>"; };
 		F65FC6BA648C99E07C7C9158 /* Pods_PlugTests_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlugTests_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CC47F68AF1F0BFAC9349F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBE90C94AAA371C6B5D7AC7F /* PluginMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginMock.swift; sourceTree = "<group>"; };
@@ -547,6 +571,7 @@
 				F18A7B5723F8DE78009DDB1B /* AllOfRuleTests.swift */,
 				F18A7B5B23F8DE83009DDB1B /* NoneOfRuleTests.swift */,
 				F18A7B5F23F8DE8D009DDB1B /* AnyOfRuleTests.swift */,
+				F18A7B9123F8EE24009DDB1B /* RuleDSLTests.swift */,
 			);
 			path = PlugTests;
 			sourceTree = "<group>";
@@ -600,6 +625,10 @@
 				F18A7B7D23F8E61A009DDB1B /* Builder+RemoveChild.swift */,
 				F18A7B8223F8E715009DDB1B /* PrecedenceGroup.swift */,
 				F18A7B8723F8EA1E009DDB1B /* Builder+Build.swift */,
+				F18A7B8C23F8EDA1009DDB1B /* Rule+Negate.swift */,
+				F18A7B9923F8EE98009DDB1B /* Rule+All.swift */,
+				F18A7B9F23F8EEA9009DDB1B /* Rule+None.swift */,
+				F18A7BA423F8EEB4009DDB1B /* Rule+Any.swift */,
 			);
 			path = DSL;
 			sourceTree = "<group>";
@@ -1047,6 +1076,7 @@
 				F18A7B7C23F8E610009DDB1B /* Builder+AddChild.swift in Sources */,
 				0EDEFD1608BE74BF4FC68A07 /* AtomRule.swift in Sources */,
 				F18A7B6823F8E1E0009DDB1B /* Builder+AddPlugin.swift in Sources */,
+				F18A7B9D23F8EE98009DDB1B /* Rule+All.swift in Sources */,
 				F18A7B6D23F8E202009DDB1B /* Builder+RemovePlugin.swift in Sources */,
 				CEEDEDB9593900F24667E2F3 /* DisabledRule.swift in Sources */,
 				E87686B9456C9F6D12B0B280 /* EnabledRule.swift in Sources */,
@@ -1059,10 +1089,13 @@
 				F18A7B5123F8DCD4009DDB1B /* NoneOfRule.swift in Sources */,
 				2DC0826A44667CC5AC09FCAC /* PRuleResolvingContext.swift in Sources */,
 				C6E01ABA489FE78A69CD6A0E /* PluginPoint.swift in Sources */,
+				F18A7B9023F8EDA1009DDB1B /* Rule+Negate.swift in Sources */,
 				F18A7B8123F8E61A009DDB1B /* Builder+RemoveChild.swift in Sources */,
 				F18A7B8B23F8EA1E009DDB1B /* Builder+Build.swift in Sources */,
+				F18A7BA323F8EEA9009DDB1B /* Rule+None.swift in Sources */,
 				F18A7B7723F8E4F8009DDB1B /* Builder+RemoveRule.swift in Sources */,
 				417BBFBED2E323337523B937 /* PluginPointBuilder.swift in Sources */,
+				F18A7BA823F8EEB4009DDB1B /* Rule+Any.swift in Sources */,
 				F18A7B7223F8E4EB009DDB1B /* Builder+AddRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1076,6 +1109,7 @@
 				F18A7B7A23F8E610009DDB1B /* Builder+AddChild.swift in Sources */,
 				C2F882B68D368DF990935D20 /* AtomRule.swift in Sources */,
 				F18A7B6623F8E1E0009DDB1B /* Builder+AddPlugin.swift in Sources */,
+				F18A7B9B23F8EE98009DDB1B /* Rule+All.swift in Sources */,
 				F18A7B6B23F8E202009DDB1B /* Builder+RemovePlugin.swift in Sources */,
 				E50BDF66821B4CA81197532B /* DisabledRule.swift in Sources */,
 				EA1E55081323689FA38E21A1 /* EnabledRule.swift in Sources */,
@@ -1088,10 +1122,13 @@
 				F18A7B4F23F8DCD4009DDB1B /* NoneOfRule.swift in Sources */,
 				F440DEF4AAF64C3E826D3E01 /* PRuleResolvingContext.swift in Sources */,
 				1F194D5E0A91B0EC181C0D7C /* PluginPoint.swift in Sources */,
+				F18A7B8E23F8EDA1009DDB1B /* Rule+Negate.swift in Sources */,
 				F18A7B7F23F8E61A009DDB1B /* Builder+RemoveChild.swift in Sources */,
 				F18A7B8923F8EA1E009DDB1B /* Builder+Build.swift in Sources */,
+				F18A7BA123F8EEA9009DDB1B /* Rule+None.swift in Sources */,
 				F18A7B7523F8E4F8009DDB1B /* Builder+RemoveRule.swift in Sources */,
 				4C9B668002722B353C8F838A /* PluginPointBuilder.swift in Sources */,
+				F18A7BA623F8EEB4009DDB1B /* Rule+Any.swift in Sources */,
 				F18A7B7023F8E4EB009DDB1B /* Builder+AddRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1105,6 +1142,7 @@
 				F18A7B7B23F8E610009DDB1B /* Builder+AddChild.swift in Sources */,
 				E1649BD8B5403432BE0B7FAD /* AtomRule.swift in Sources */,
 				F18A7B6723F8E1E0009DDB1B /* Builder+AddPlugin.swift in Sources */,
+				F18A7B9C23F8EE98009DDB1B /* Rule+All.swift in Sources */,
 				F18A7B6C23F8E202009DDB1B /* Builder+RemovePlugin.swift in Sources */,
 				A60059C0B5F56A276FC80A5E /* DisabledRule.swift in Sources */,
 				70EC6D626665AA0F8B724B98 /* EnabledRule.swift in Sources */,
@@ -1117,10 +1155,13 @@
 				F18A7B5023F8DCD4009DDB1B /* NoneOfRule.swift in Sources */,
 				90BBFA79A7968A109023CF21 /* PRuleResolvingContext.swift in Sources */,
 				D31AEAFA2FFF64798CBDB78E /* PluginPoint.swift in Sources */,
+				F18A7B8F23F8EDA1009DDB1B /* Rule+Negate.swift in Sources */,
 				F18A7B8023F8E61A009DDB1B /* Builder+RemoveChild.swift in Sources */,
 				F18A7B8A23F8EA1E009DDB1B /* Builder+Build.swift in Sources */,
+				F18A7BA223F8EEA9009DDB1B /* Rule+None.swift in Sources */,
 				F18A7B7623F8E4F8009DDB1B /* Builder+RemoveRule.swift in Sources */,
 				205399837D72B2BD8290ADD9 /* PluginPointBuilder.swift in Sources */,
+				F18A7BA723F8EEB4009DDB1B /* Rule+Any.swift in Sources */,
 				F18A7B7123F8E4EB009DDB1B /* Builder+AddRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1130,6 +1171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19A2382DE9E3FCC6AD1C30D0 /* AnyRuleTests.swift in Sources */,
+				F18A7B9823F8EE3E009DDB1B /* RuleDSLTests.swift in Sources */,
 				0875113739E46BE8517E5B1D /* AtomRuleTests.swift in Sources */,
 				BF25732A943BF47778600659 /* DisabledRuleTests.swift in Sources */,
 				9590F8194465CB482D884A3B /* EnabledRuleTests.swift in Sources */,
@@ -1154,6 +1196,7 @@
 				F18A7B7923F8E610009DDB1B /* Builder+AddChild.swift in Sources */,
 				5B0E0EBBC236B0DFF0BF8410 /* AtomRule.swift in Sources */,
 				F18A7B6523F8E1E0009DDB1B /* Builder+AddPlugin.swift in Sources */,
+				F18A7B9A23F8EE98009DDB1B /* Rule+All.swift in Sources */,
 				F18A7B6A23F8E202009DDB1B /* Builder+RemovePlugin.swift in Sources */,
 				896D224A6ADF4836348B6109 /* DisabledRule.swift in Sources */,
 				8DBB74A455AE402C5D09B4DD /* EnabledRule.swift in Sources */,
@@ -1166,10 +1209,13 @@
 				F18A7B4E23F8DCD4009DDB1B /* NoneOfRule.swift in Sources */,
 				7731D42910F540C897DB74AB /* PRuleResolvingContext.swift in Sources */,
 				D711A68C227D05B2984AD2C2 /* PluginPoint.swift in Sources */,
+				F18A7B8D23F8EDA1009DDB1B /* Rule+Negate.swift in Sources */,
 				F18A7B7E23F8E61A009DDB1B /* Builder+RemoveChild.swift in Sources */,
 				F18A7B8823F8EA1E009DDB1B /* Builder+Build.swift in Sources */,
+				F18A7BA023F8EEA9009DDB1B /* Rule+None.swift in Sources */,
 				F18A7B7423F8E4F8009DDB1B /* Builder+RemoveRule.swift in Sources */,
 				5B6749C4DE8EA1DD794A40F3 /* PluginPointBuilder.swift in Sources */,
+				F18A7BA523F8EEB4009DDB1B /* Rule+Any.swift in Sources */,
 				F18A7B6F23F8E4EB009DDB1B /* Builder+AddRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1179,6 +1225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				178D71B182906568DBB69973 /* AnyRuleTests.swift in Sources */,
+				F18A7B9723F8EE3D009DDB1B /* RuleDSLTests.swift in Sources */,
 				73FA1974F1053DA55579CA89 /* AtomRuleTests.swift in Sources */,
 				9828D381E6430476A948BBE5 /* DisabledRuleTests.swift in Sources */,
 				284C97B758BAA1BEA7530D07 /* EnabledRuleTests.swift in Sources */,
@@ -1214,6 +1261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				639A81F848F36CEAA491E892 /* AnyRuleTests.swift in Sources */,
+				F18A7B9623F8EE3D009DDB1B /* RuleDSLTests.swift in Sources */,
 				D189C3F91E21E7165816055B /* AtomRuleTests.swift in Sources */,
 				19BFC5F835EDBFF1A370563D /* DisabledRuleTests.swift in Sources */,
 				E9BDBB89CCF6E0549851F256 /* EnabledRuleTests.swift in Sources */,

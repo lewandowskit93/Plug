@@ -289,8 +289,8 @@
 		360AF1846B15B2B12CDCB920 /* NoneOfRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneOfRuleTests.swift; sourceTree = "<group>"; };
 		36E2B28AB21E76C964C1EEFB /* Builder+AddChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+AddChild.swift"; sourceTree = "<group>"; };
 		390785D12C585CD942B4F05B /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		396ECE33EA9A5C762A3FE9C2 /* PlugTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PlugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D6F0A9BC3AEA7B4635E8E99 /* PlugTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PlugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		396ECE33EA9A5C762A3FE9C2 /* PlugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6F0A9BC3AEA7B4635E8E99 /* PlugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5EC0780499EDF59A32D6A7 /* Pods-Plug_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plug_macOS.debug.xcconfig"; path = "Target Support Files/Pods-Plug_macOS/Pods-Plug_macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4307AC1245DAE5F124326160 /* Builder+AddRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+AddRule.swift"; sourceTree = "<group>"; };
 		43AF2DD096E5A98151B0B40A /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -460,7 +460,6 @@
 				6D15BCA11310055301DAFA28 /* Pods-Plug_watchOS.debug.xcconfig */,
 				5808353D91A4AB3708DDDBD9 /* Pods-Plug_watchOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -843,6 +842,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = EE59FFE427BE76E90FFB426F;

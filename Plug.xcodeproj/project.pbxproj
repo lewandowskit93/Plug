@@ -99,6 +99,34 @@
 		E9BDBB89CCF6E0549851F256 /* EnabledRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCE564B2A78E0DC6897249 /* EnabledRuleTests.swift */; };
 		EA1E55081323689FA38E21A1 /* EnabledRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220821FE5FC7BDAD7528DDDD /* EnabledRule.swift */; };
 		F0D92126174E1F3C351351B9 /* PRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AB953D44967E73DA60F123 /* PRule.swift */; };
+		F18A7B4023F8D8CB009DDB1B /* InvertedRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B3F23F8D8CB009DDB1B /* InvertedRule.swift */; };
+		F18A7B4123F8D8CB009DDB1B /* InvertedRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B3F23F8D8CB009DDB1B /* InvertedRule.swift */; };
+		F18A7B4223F8D8CB009DDB1B /* InvertedRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B3F23F8D8CB009DDB1B /* InvertedRule.swift */; };
+		F18A7B4323F8D8CB009DDB1B /* InvertedRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B3F23F8D8CB009DDB1B /* InvertedRule.swift */; };
+		F18A7B4523F8D981009DDB1B /* InvertedRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B4423F8D981009DDB1B /* InvertedRuleTests.swift */; };
+		F18A7B4623F8D981009DDB1B /* InvertedRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B4423F8D981009DDB1B /* InvertedRuleTests.swift */; };
+		F18A7B4723F8D981009DDB1B /* InvertedRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B4423F8D981009DDB1B /* InvertedRuleTests.swift */; };
+		F18A7B4923F8DCC6009DDB1B /* AllOfRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B4823F8DCC6009DDB1B /* AllOfRule.swift */; };
+		F18A7B4A23F8DCC6009DDB1B /* AllOfRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B4823F8DCC6009DDB1B /* AllOfRule.swift */; };
+		F18A7B4B23F8DCC6009DDB1B /* AllOfRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B4823F8DCC6009DDB1B /* AllOfRule.swift */; };
+		F18A7B4C23F8DCC6009DDB1B /* AllOfRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B4823F8DCC6009DDB1B /* AllOfRule.swift */; };
+		F18A7B4E23F8DCD4009DDB1B /* NoneOfRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B4D23F8DCD4009DDB1B /* NoneOfRule.swift */; };
+		F18A7B4F23F8DCD4009DDB1B /* NoneOfRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B4D23F8DCD4009DDB1B /* NoneOfRule.swift */; };
+		F18A7B5023F8DCD4009DDB1B /* NoneOfRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B4D23F8DCD4009DDB1B /* NoneOfRule.swift */; };
+		F18A7B5123F8DCD4009DDB1B /* NoneOfRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B4D23F8DCD4009DDB1B /* NoneOfRule.swift */; };
+		F18A7B5323F8DCDF009DDB1B /* AnyOfRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5223F8DCDF009DDB1B /* AnyOfRule.swift */; };
+		F18A7B5423F8DCDF009DDB1B /* AnyOfRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5223F8DCDF009DDB1B /* AnyOfRule.swift */; };
+		F18A7B5523F8DCDF009DDB1B /* AnyOfRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5223F8DCDF009DDB1B /* AnyOfRule.swift */; };
+		F18A7B5623F8DCDF009DDB1B /* AnyOfRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5223F8DCDF009DDB1B /* AnyOfRule.swift */; };
+		F18A7B5823F8DE78009DDB1B /* AllOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5723F8DE78009DDB1B /* AllOfRuleTests.swift */; };
+		F18A7B5923F8DE78009DDB1B /* AllOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5723F8DE78009DDB1B /* AllOfRuleTests.swift */; };
+		F18A7B5A23F8DE78009DDB1B /* AllOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5723F8DE78009DDB1B /* AllOfRuleTests.swift */; };
+		F18A7B5C23F8DE83009DDB1B /* NoneOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5B23F8DE83009DDB1B /* NoneOfRuleTests.swift */; };
+		F18A7B5D23F8DE83009DDB1B /* NoneOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5B23F8DE83009DDB1B /* NoneOfRuleTests.swift */; };
+		F18A7B5E23F8DE83009DDB1B /* NoneOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5B23F8DE83009DDB1B /* NoneOfRuleTests.swift */; };
+		F18A7B6023F8DE8D009DDB1B /* AnyOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5F23F8DE8D009DDB1B /* AnyOfRuleTests.swift */; };
+		F18A7B6123F8DE8D009DDB1B /* AnyOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5F23F8DE8D009DDB1B /* AnyOfRuleTests.swift */; };
+		F18A7B6223F8DE8D009DDB1B /* AnyOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5F23F8DE8D009DDB1B /* AnyOfRuleTests.swift */; };
 		F440DEF4AAF64C3E826D3E01 /* PRuleResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E1DEB6B505B9E835C5B00 /* PRuleResolvingContext.swift */; };
 		F626362EFC5518A7EC804CB2 /* IdentifiedPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6152275853AF67DE1B8BB2A0 /* IdentifiedPlugin.swift */; };
 /* End PBXBuildFile section */
@@ -249,6 +277,14 @@
 		EC49A807EA6D57EAC7BF5AD6 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		EC7FB66C557127FA6A988797 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		EE11872654B94B1E9434B374 /* Pods-PlugTests_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlugTests_tvOS.release.xcconfig"; path = "Target Support Files/Pods-PlugTests_tvOS/Pods-PlugTests_tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		F18A7B3F23F8D8CB009DDB1B /* InvertedRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedRule.swift; sourceTree = "<group>"; };
+		F18A7B4423F8D981009DDB1B /* InvertedRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedRuleTests.swift; sourceTree = "<group>"; };
+		F18A7B4823F8DCC6009DDB1B /* AllOfRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOfRule.swift; sourceTree = "<group>"; };
+		F18A7B4D23F8DCD4009DDB1B /* NoneOfRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneOfRule.swift; sourceTree = "<group>"; };
+		F18A7B5223F8DCDF009DDB1B /* AnyOfRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyOfRule.swift; sourceTree = "<group>"; };
+		F18A7B5723F8DE78009DDB1B /* AllOfRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOfRuleTests.swift; sourceTree = "<group>"; };
+		F18A7B5B23F8DE83009DDB1B /* NoneOfRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneOfRuleTests.swift; sourceTree = "<group>"; };
+		F18A7B5F23F8DE8D009DDB1B /* AnyOfRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyOfRuleTests.swift; sourceTree = "<group>"; };
 		F65FC6BA648C99E07C7C9158 /* Pods_PlugTests_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlugTests_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CC47F68AF1F0BFAC9349F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBE90C94AAA371C6B5D7AC7F /* PluginMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginMock.swift; sourceTree = "<group>"; };
@@ -396,6 +432,10 @@
 				02EBE5E2CC7772D2495C31F8 /* DisabledRule.swift */,
 				220821FE5FC7BDAD7528DDDD /* EnabledRule.swift */,
 				B9AB953D44967E73DA60F123 /* PRule.swift */,
+				F18A7B3F23F8D8CB009DDB1B /* InvertedRule.swift */,
+				F18A7B4823F8DCC6009DDB1B /* AllOfRule.swift */,
+				F18A7B4D23F8DCD4009DDB1B /* NoneOfRule.swift */,
+				F18A7B5223F8DCDF009DDB1B /* AnyOfRule.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -445,7 +485,6 @@
 				3670C041EB7E154BE559FD33 /* Pods-Plug_watchOS.debug.xcconfig */,
 				33E2D5741016AAF3C1BD329C /* Pods-Plug_watchOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -464,6 +503,10 @@
 				ACA94E20FE7C305A9D06EC2C /* PlugTests_tvOS-Bridging-Header.h */,
 				8C511D00E062E505224B8872 /* ResolvingContextMock.swift */,
 				A06F5571C52663D439B6C0A0 /* RuleMock.swift */,
+				F18A7B4423F8D981009DDB1B /* InvertedRuleTests.swift */,
+				F18A7B5723F8DE78009DDB1B /* AllOfRuleTests.swift */,
+				F18A7B5B23F8DE83009DDB1B /* NoneOfRuleTests.swift */,
+				F18A7B5F23F8DE8D009DDB1B /* AnyOfRuleTests.swift */,
 			);
 			path = PlugTests;
 			sourceTree = "<group>";
@@ -708,6 +751,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = EE59FFE427BE76E90FFB426F;
@@ -942,13 +986,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18A7B4C23F8DCC6009DDB1B /* AllOfRule.swift in Sources */,
 				60D5D114294121FC9C8CF984 /* AnyRule.swift in Sources */,
 				0EDEFD1608BE74BF4FC68A07 /* AtomRule.swift in Sources */,
 				CEEDEDB9593900F24667E2F3 /* DisabledRule.swift in Sources */,
 				E87686B9456C9F6D12B0B280 /* EnabledRule.swift in Sources */,
+				F18A7B5623F8DCDF009DDB1B /* AnyOfRule.swift in Sources */,
 				CB981B2D1B7E033D8C8F72A6 /* IdentifiedPlugin.swift in Sources */,
 				B3EF61C694E8FE70D90B8972 /* PPlugin.swift in Sources */,
+				F18A7B4323F8D8CB009DDB1B /* InvertedRule.swift in Sources */,
 				70EC07A5013F65B71031BBF2 /* PRule.swift in Sources */,
+				F18A7B5123F8DCD4009DDB1B /* NoneOfRule.swift in Sources */,
 				2DC0826A44667CC5AC09FCAC /* PRuleResolvingContext.swift in Sources */,
 				C6E01ABA489FE78A69CD6A0E /* PluginPoint.swift in Sources */,
 				417BBFBED2E323337523B937 /* PluginPointBuilder.swift in Sources */,
@@ -959,13 +1007,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18A7B4A23F8DCC6009DDB1B /* AllOfRule.swift in Sources */,
 				9AE67C242F6A71E5904E9E9B /* AnyRule.swift in Sources */,
 				C2F882B68D368DF990935D20 /* AtomRule.swift in Sources */,
 				E50BDF66821B4CA81197532B /* DisabledRule.swift in Sources */,
 				EA1E55081323689FA38E21A1 /* EnabledRule.swift in Sources */,
+				F18A7B5423F8DCDF009DDB1B /* AnyOfRule.swift in Sources */,
 				6EE2A9258633E136B7137A84 /* IdentifiedPlugin.swift in Sources */,
 				74A6EE9B2F01762CEF30F51E /* PPlugin.swift in Sources */,
+				F18A7B4123F8D8CB009DDB1B /* InvertedRule.swift in Sources */,
 				F0D92126174E1F3C351351B9 /* PRule.swift in Sources */,
+				F18A7B4F23F8DCD4009DDB1B /* NoneOfRule.swift in Sources */,
 				F440DEF4AAF64C3E826D3E01 /* PRuleResolvingContext.swift in Sources */,
 				1F194D5E0A91B0EC181C0D7C /* PluginPoint.swift in Sources */,
 				4C9B668002722B353C8F838A /* PluginPointBuilder.swift in Sources */,
@@ -976,13 +1028,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18A7B4B23F8DCC6009DDB1B /* AllOfRule.swift in Sources */,
 				46C11BEDBB20CE68AF9DFEDE /* AnyRule.swift in Sources */,
 				E1649BD8B5403432BE0B7FAD /* AtomRule.swift in Sources */,
 				A60059C0B5F56A276FC80A5E /* DisabledRule.swift in Sources */,
 				70EC6D626665AA0F8B724B98 /* EnabledRule.swift in Sources */,
+				F18A7B5523F8DCDF009DDB1B /* AnyOfRule.swift in Sources */,
 				7F46CA7B05400DCBD73940D8 /* IdentifiedPlugin.swift in Sources */,
 				E57DEE6C4E26AB6BE9F6C22E /* PPlugin.swift in Sources */,
+				F18A7B4223F8D8CB009DDB1B /* InvertedRule.swift in Sources */,
 				2FB6FF2339274E1CBF3DC5F4 /* PRule.swift in Sources */,
+				F18A7B5023F8DCD4009DDB1B /* NoneOfRule.swift in Sources */,
 				90BBFA79A7968A109023CF21 /* PRuleResolvingContext.swift in Sources */,
 				D31AEAFA2FFF64798CBDB78E /* PluginPoint.swift in Sources */,
 				205399837D72B2BD8290ADD9 /* PluginPointBuilder.swift in Sources */,
@@ -997,11 +1053,15 @@
 				0875113739E46BE8517E5B1D /* AtomRuleTests.swift in Sources */,
 				BF25732A943BF47778600659 /* DisabledRuleTests.swift in Sources */,
 				9590F8194465CB482D884A3B /* EnabledRuleTests.swift in Sources */,
+				F18A7B5C23F8DE83009DDB1B /* NoneOfRuleTests.swift in Sources */,
 				1D7E0CB6CAECAF0BE53FAB8F /* IdentifiablePluginTests.swift in Sources */,
 				46168BD65406B6DA3566C6EA /* PluginMock.swift in Sources */,
 				A84EDB4263E0C893FFF053CC /* PluginPointBuilderTests.swift in Sources */,
 				8F4BF890AC2995F1940463BE /* ResolvingContextMock.swift in Sources */,
+				F18A7B6023F8DE8D009DDB1B /* AnyOfRuleTests.swift in Sources */,
+				F18A7B4523F8D981009DDB1B /* InvertedRuleTests.swift in Sources */,
 				6F3F7E64960ECB73944F3759 /* RuleMock.swift in Sources */,
+				F18A7B5823F8DE78009DDB1B /* AllOfRuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1009,13 +1069,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18A7B4923F8DCC6009DDB1B /* AllOfRule.swift in Sources */,
 				D3F9618CF83AE658317AC5FF /* AnyRule.swift in Sources */,
 				5B0E0EBBC236B0DFF0BF8410 /* AtomRule.swift in Sources */,
 				896D224A6ADF4836348B6109 /* DisabledRule.swift in Sources */,
 				8DBB74A455AE402C5D09B4DD /* EnabledRule.swift in Sources */,
+				F18A7B5323F8DCDF009DDB1B /* AnyOfRule.swift in Sources */,
 				F626362EFC5518A7EC804CB2 /* IdentifiedPlugin.swift in Sources */,
 				5D68DB5B792852CBC5F3668A /* PPlugin.swift in Sources */,
+				F18A7B4023F8D8CB009DDB1B /* InvertedRule.swift in Sources */,
 				994A7D0F44B5BEB4112B2271 /* PRule.swift in Sources */,
+				F18A7B4E23F8DCD4009DDB1B /* NoneOfRule.swift in Sources */,
 				7731D42910F540C897DB74AB /* PRuleResolvingContext.swift in Sources */,
 				D711A68C227D05B2984AD2C2 /* PluginPoint.swift in Sources */,
 				5B6749C4DE8EA1DD794A40F3 /* PluginPointBuilder.swift in Sources */,
@@ -1030,11 +1094,15 @@
 				73FA1974F1053DA55579CA89 /* AtomRuleTests.swift in Sources */,
 				9828D381E6430476A948BBE5 /* DisabledRuleTests.swift in Sources */,
 				284C97B758BAA1BEA7530D07 /* EnabledRuleTests.swift in Sources */,
+				F18A7B5D23F8DE83009DDB1B /* NoneOfRuleTests.swift in Sources */,
 				1CF6CF4A49818432430B9B6F /* IdentifiablePluginTests.swift in Sources */,
 				9BCEF9B5BF53A90E31F75D34 /* PluginMock.swift in Sources */,
 				66CBC5C54D8C32DA0D3435ED /* PluginPointBuilderTests.swift in Sources */,
 				0B0E9E8D8DBFD90EDD3D3D3A /* ResolvingContextMock.swift in Sources */,
+				F18A7B6123F8DE8D009DDB1B /* AnyOfRuleTests.swift in Sources */,
+				F18A7B4623F8D981009DDB1B /* InvertedRuleTests.swift in Sources */,
 				1D7283BE1F4E9167C4510004 /* RuleMock.swift in Sources */,
+				F18A7B5923F8DE78009DDB1B /* AllOfRuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1061,11 +1129,15 @@
 				D189C3F91E21E7165816055B /* AtomRuleTests.swift in Sources */,
 				19BFC5F835EDBFF1A370563D /* DisabledRuleTests.swift in Sources */,
 				E9BDBB89CCF6E0549851F256 /* EnabledRuleTests.swift in Sources */,
+				F18A7B5E23F8DE83009DDB1B /* NoneOfRuleTests.swift in Sources */,
 				749655DBB51C57A9D011517B /* IdentifiablePluginTests.swift in Sources */,
 				BE98B2C2B861633BFA98B229 /* PluginMock.swift in Sources */,
 				DABE9300046A12E9C279FD82 /* PluginPointBuilderTests.swift in Sources */,
 				4A256BEFB4B9C5CDC59EDFAB /* ResolvingContextMock.swift in Sources */,
+				F18A7B6223F8DE8D009DDB1B /* AnyOfRuleTests.swift in Sources */,
+				F18A7B4723F8D981009DDB1B /* InvertedRuleTests.swift in Sources */,
 				097A5471A3FB4E10E11CBE75 /* RuleMock.swift in Sources */,
+				F18A7B5A23F8DE78009DDB1B /* AllOfRuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

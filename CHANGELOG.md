@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+## 0.2.0
+- Added basic documentation
+- Created ios example instead of macos
+
 ## 0.1.0
 - Add rules: InvertedRule, AllOfRule, AnyOfRule, NoneOfRule
 - Added Builder DSL

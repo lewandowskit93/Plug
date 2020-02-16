@@ -52,7 +52,10 @@ struct MainMenuPluginsFactory {
         return IdentifiedPlugin(
             id: id,
             wrappedValue: ViewPlugin {
-                return AnyView(Text(title))
+                return AnyView(
+                    NavigationLink(
+                        destination: LazyView { SearchView() }
+                    ) { Text(title) })
             }
         )
     }

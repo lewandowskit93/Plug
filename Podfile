@@ -5,7 +5,7 @@ project 'Plug.xcodeproj'
 use_frameworks!
 
 target 'Example' do
-  platform :macos, '10.15'
+  platform :ios, '13.0'
   pod 'SwiftLint'
 end
 

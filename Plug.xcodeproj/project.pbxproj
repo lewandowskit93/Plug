@@ -30,7 +30,7 @@
 		2FB6FF2339274E1CBF3DC5F4 /* PRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AB953D44967E73DA60F123 /* PRule.swift */; };
 		363E7F1DCE6D7514FF880EC3 /* Plug.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE3138EEE6FF56AF3063C59F /* Plug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36B0A235E760039AA2F0358F /* Plug.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE3138EEE6FF56AF3063C59F /* Plug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3F46B3D990C2FA4EE2E2E2C9 /* HelloWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B62E27F5CC8BCC128C950 /* HelloWorldView.swift */; };
+		3F46B3D990C2FA4EE2E2E2C9 /* HelloPlugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B62E27F5CC8BCC128C950 /* HelloPlugView.swift */; };
 		417BBFBED2E323337523B937 /* PluginPointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49451CA22A979F0730D7BEE /* PluginPointBuilder.swift */; };
 		46168BD65406B6DA3566C6EA /* PluginMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE90C94AAA371C6B5D7AC7F /* PluginMock.swift */; };
 		46C11BEDBB20CE68AF9DFEDE /* AnyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DB29086283C974D1595B7A /* AnyRule.swift */; };
@@ -93,7 +93,7 @@
 		E1649BD8B5403432BE0B7FAD /* AtomRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B22A6307B921F64F010C41 /* AtomRule.swift */; };
 		E50BDF66821B4CA81197532B /* DisabledRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBE5E2CC7772D2495C31F8 /* DisabledRule.swift */; };
 		E57DEE6C4E26AB6BE9F6C22E /* PPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17548779DBED5655FAD13A74 /* PPlugin.swift */; };
-		E5E49BE92219E1B40915FF21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC47F68AF1F0BFAC9349F1 /* ContentView.swift */; };
+		E5E49BE92219E1B40915FF21 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC47F68AF1F0BFAC9349F1 /* MainMenu.swift */; };
 		E7AE9AF235E541330617D61F /* Plug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3138EEE6FF56AF3063C59F /* Plug.framework */; };
 		E87686B9456C9F6D12B0B280 /* EnabledRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220821FE5FC7BDAD7528DDDD /* EnabledRule.swift */; };
 		E9BDBB89CCF6E0549851F256 /* EnabledRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCE564B2A78E0DC6897249 /* EnabledRuleTests.swift */; };
@@ -178,6 +178,8 @@
 		F18A7BA623F8EEB4009DDB1B /* Rule+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7BA423F8EEB4009DDB1B /* Rule+Any.swift */; };
 		F18A7BA723F8EEB4009DDB1B /* Rule+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7BA423F8EEB4009DDB1B /* Rule+Any.swift */; };
 		F18A7BA823F8EEB4009DDB1B /* Rule+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7BA423F8EEB4009DDB1B /* Rule+Any.swift */; };
+		F18A7BAA23F8F1A2009DDB1B /* DSLMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7BA923F8F1A2009DDB1B /* DSLMenu.swift */; };
+		F18A7BAC23F8F37F009DDB1B /* HelloDSLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7BAB23F8F37F009DDB1B /* HelloDSLView.swift */; };
 		F440DEF4AAF64C3E826D3E01 /* PRuleResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E1DEB6B505B9E835C5B00 /* PRuleResolvingContext.swift */; };
 		F626362EFC5518A7EC804CB2 /* IdentifiedPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6152275853AF67DE1B8BB2A0 /* IdentifiedPlugin.swift */; };
 /* End PBXBuildFile section */
@@ -297,7 +299,7 @@
 		80E6FB4023687C4FAC161AE1 /* AtomRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomRuleTests.swift; sourceTree = "<group>"; };
 		8C511D00E062E505224B8872 /* ResolvingContextMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolvingContextMock.swift; sourceTree = "<group>"; };
 		9099FEEA3E598B324AD6DC41 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		957B62E27F5CC8BCC128C950 /* HelloWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldView.swift; sourceTree = "<group>"; };
+		957B62E27F5CC8BCC128C950 /* HelloPlugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloPlugView.swift; sourceTree = "<group>"; };
 		95DB29086283C974D1595B7A /* AnyRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRule.swift; sourceTree = "<group>"; };
 		9F8380AAB8F2D7C1278B2E33 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		A06F5571C52663D439B6C0A0 /* RuleMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleMock.swift; sourceTree = "<group>"; };
@@ -349,8 +351,10 @@
 		F18A7B9923F8EE98009DDB1B /* Rule+All.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+All.swift"; sourceTree = "<group>"; };
 		F18A7B9F23F8EEA9009DDB1B /* Rule+None.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+None.swift"; sourceTree = "<group>"; };
 		F18A7BA423F8EEB4009DDB1B /* Rule+Any.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+Any.swift"; sourceTree = "<group>"; };
+		F18A7BA923F8F1A2009DDB1B /* DSLMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSLMenu.swift; sourceTree = "<group>"; };
+		F18A7BAB23F8F37F009DDB1B /* HelloDSLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloDSLView.swift; sourceTree = "<group>"; };
 		F65FC6BA648C99E07C7C9158 /* Pods_PlugTests_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlugTests_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8CC47F68AF1F0BFAC9349F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8CC47F68AF1F0BFAC9349F1 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		FBE90C94AAA371C6B5D7AC7F /* PluginMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginMock.swift; sourceTree = "<group>"; };
 		FE3138EEE6FF56AF3063C59F /* Plug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Plug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF8E6EE96403FAF16C6E828 /* Pods_PlugTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlugTests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -473,8 +477,10 @@
 		7E8BCF36514A2D26C1C3E15D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F8CC47F68AF1F0BFAC9349F1 /* ContentView.swift */,
-				957B62E27F5CC8BCC128C950 /* HelloWorldView.swift */,
+				F8CC47F68AF1F0BFAC9349F1 /* MainMenu.swift */,
+				957B62E27F5CC8BCC128C950 /* HelloPlugView.swift */,
+				F18A7BA923F8F1A2009DDB1B /* DSLMenu.swift */,
+				F18A7BAB23F8F37F009DDB1B /* HelloDSLView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1245,12 +1251,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18A7BAA23F8F1A2009DDB1B /* DSLMenu.swift in Sources */,
 				13025556516D516060EB34F0 /* AppDelegate.swift in Sources */,
-				E5E49BE92219E1B40915FF21 /* ContentView.swift in Sources */,
+				E5E49BE92219E1B40915FF21 /* MainMenu.swift in Sources */,
 				5968E69303205480FE7318F5 /* FeatureEnabledRule.swift in Sources */,
-				3F46B3D990C2FA4EE2E2E2C9 /* HelloWorldView.swift in Sources */,
+				3F46B3D990C2FA4EE2E2E2C9 /* HelloPlugView.swift in Sources */,
 				4B33F218A1BC9C7B7688EE24 /* MainMenuContext.swift in Sources */,
 				C6C67EB5F41D2D74C1E49EA1 /* MainMenuPluginsFactory.swift in Sources */,
+				F18A7BAC23F8F37F009DDB1B /* HelloDSLView.swift in Sources */,
 				A020F5B526F43E6432734F71 /* PFeatureResolvableContext.swift in Sources */,
 				4BA37A0D985C825F9796D6FE /* ViewPlugin.swift in Sources */,
 			);

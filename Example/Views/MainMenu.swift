@@ -16,7 +16,7 @@ struct MainMenu: View {
     
     init() {
         pluginPoint = PluginPointBuilder()
-            .add(plugin: pluginFactory.helloWorldPlugin())
+            .add(plugin: pluginFactory.helloPlugPlugin())
             .add(child: PluginPointBuilder()
                 .add(plugin: pluginFactory.feature1Plugin())
                 .add(rule: FeatureEnabledRule(id: "feature_1").any())
@@ -46,14 +46,15 @@ struct MainMenu: View {
     }
     
     var body: some View {
-        List {
-            ForEach(pluginPoint.getAvailablePlugins(context: MainMenuContext())) { plugin in
-                return plugin.plugin.view
+        NavigationView {
+            List {
+                ForEach(pluginPoint.getAvailablePlugins(context: MainMenuContext())) { plugin in
+                    return plugin.plugin.view
+                }
             }
         }
     }
 }
-
 
 struct MainMenu_Previews: PreviewProvider {
     static var previews: some View {

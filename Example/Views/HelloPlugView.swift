@@ -1,5 +1,5 @@
 //
-//  HelloWorldView.swift
+//  HelloPlugView.swift
 //  Example
 //
 //  Created by Tomasz Lewandowski on 15/02/2020.
@@ -8,8 +8,8 @@
 
 import SwiftUI
 
-struct HelloWorldView: View {
+struct HelloPlugView: View {
     var body: some View {
-        Text("Hello, World!")
+        Text("Hello, Plug!")
     }
 }

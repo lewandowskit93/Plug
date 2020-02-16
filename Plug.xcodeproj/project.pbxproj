@@ -127,6 +127,38 @@
 		F18A7B6023F8DE8D009DDB1B /* AnyOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5F23F8DE8D009DDB1B /* AnyOfRuleTests.swift */; };
 		F18A7B6123F8DE8D009DDB1B /* AnyOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5F23F8DE8D009DDB1B /* AnyOfRuleTests.swift */; };
 		F18A7B6223F8DE8D009DDB1B /* AnyOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B5F23F8DE8D009DDB1B /* AnyOfRuleTests.swift */; };
+		F18A7B6523F8E1E0009DDB1B /* Builder+AddPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B6423F8E1E0009DDB1B /* Builder+AddPlugin.swift */; };
+		F18A7B6623F8E1E0009DDB1B /* Builder+AddPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B6423F8E1E0009DDB1B /* Builder+AddPlugin.swift */; };
+		F18A7B6723F8E1E0009DDB1B /* Builder+AddPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B6423F8E1E0009DDB1B /* Builder+AddPlugin.swift */; };
+		F18A7B6823F8E1E0009DDB1B /* Builder+AddPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B6423F8E1E0009DDB1B /* Builder+AddPlugin.swift */; };
+		F18A7B6A23F8E202009DDB1B /* Builder+RemovePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B6923F8E202009DDB1B /* Builder+RemovePlugin.swift */; };
+		F18A7B6B23F8E202009DDB1B /* Builder+RemovePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B6923F8E202009DDB1B /* Builder+RemovePlugin.swift */; };
+		F18A7B6C23F8E202009DDB1B /* Builder+RemovePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B6923F8E202009DDB1B /* Builder+RemovePlugin.swift */; };
+		F18A7B6D23F8E202009DDB1B /* Builder+RemovePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B6923F8E202009DDB1B /* Builder+RemovePlugin.swift */; };
+		F18A7B6F23F8E4EB009DDB1B /* Builder+AddRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B6E23F8E4EB009DDB1B /* Builder+AddRule.swift */; };
+		F18A7B7023F8E4EB009DDB1B /* Builder+AddRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B6E23F8E4EB009DDB1B /* Builder+AddRule.swift */; };
+		F18A7B7123F8E4EB009DDB1B /* Builder+AddRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B6E23F8E4EB009DDB1B /* Builder+AddRule.swift */; };
+		F18A7B7223F8E4EB009DDB1B /* Builder+AddRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B6E23F8E4EB009DDB1B /* Builder+AddRule.swift */; };
+		F18A7B7423F8E4F8009DDB1B /* Builder+RemoveRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B7323F8E4F8009DDB1B /* Builder+RemoveRule.swift */; };
+		F18A7B7523F8E4F8009DDB1B /* Builder+RemoveRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B7323F8E4F8009DDB1B /* Builder+RemoveRule.swift */; };
+		F18A7B7623F8E4F8009DDB1B /* Builder+RemoveRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B7323F8E4F8009DDB1B /* Builder+RemoveRule.swift */; };
+		F18A7B7723F8E4F8009DDB1B /* Builder+RemoveRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B7323F8E4F8009DDB1B /* Builder+RemoveRule.swift */; };
+		F18A7B7923F8E610009DDB1B /* Builder+AddChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B7823F8E610009DDB1B /* Builder+AddChild.swift */; };
+		F18A7B7A23F8E610009DDB1B /* Builder+AddChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B7823F8E610009DDB1B /* Builder+AddChild.swift */; };
+		F18A7B7B23F8E610009DDB1B /* Builder+AddChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B7823F8E610009DDB1B /* Builder+AddChild.swift */; };
+		F18A7B7C23F8E610009DDB1B /* Builder+AddChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B7823F8E610009DDB1B /* Builder+AddChild.swift */; };
+		F18A7B7E23F8E61A009DDB1B /* Builder+RemoveChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B7D23F8E61A009DDB1B /* Builder+RemoveChild.swift */; };
+		F18A7B7F23F8E61A009DDB1B /* Builder+RemoveChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B7D23F8E61A009DDB1B /* Builder+RemoveChild.swift */; };
+		F18A7B8023F8E61A009DDB1B /* Builder+RemoveChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B7D23F8E61A009DDB1B /* Builder+RemoveChild.swift */; };
+		F18A7B8123F8E61A009DDB1B /* Builder+RemoveChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B7D23F8E61A009DDB1B /* Builder+RemoveChild.swift */; };
+		F18A7B8323F8E715009DDB1B /* PrecedenceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8223F8E715009DDB1B /* PrecedenceGroup.swift */; };
+		F18A7B8423F8E715009DDB1B /* PrecedenceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8223F8E715009DDB1B /* PrecedenceGroup.swift */; };
+		F18A7B8523F8E715009DDB1B /* PrecedenceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8223F8E715009DDB1B /* PrecedenceGroup.swift */; };
+		F18A7B8623F8E715009DDB1B /* PrecedenceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8223F8E715009DDB1B /* PrecedenceGroup.swift */; };
+		F18A7B8823F8EA1E009DDB1B /* Builder+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8723F8EA1E009DDB1B /* Builder+Build.swift */; };
+		F18A7B8923F8EA1E009DDB1B /* Builder+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8723F8EA1E009DDB1B /* Builder+Build.swift */; };
+		F18A7B8A23F8EA1E009DDB1B /* Builder+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8723F8EA1E009DDB1B /* Builder+Build.swift */; };
+		F18A7B8B23F8EA1E009DDB1B /* Builder+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18A7B8723F8EA1E009DDB1B /* Builder+Build.swift */; };
 		F440DEF4AAF64C3E826D3E01 /* PRuleResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E1DEB6B505B9E835C5B00 /* PRuleResolvingContext.swift */; };
 		F626362EFC5518A7EC804CB2 /* IdentifiedPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6152275853AF67DE1B8BB2A0 /* IdentifiedPlugin.swift */; };
 /* End PBXBuildFile section */
@@ -285,6 +317,14 @@
 		F18A7B5723F8DE78009DDB1B /* AllOfRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOfRuleTests.swift; sourceTree = "<group>"; };
 		F18A7B5B23F8DE83009DDB1B /* NoneOfRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneOfRuleTests.swift; sourceTree = "<group>"; };
 		F18A7B5F23F8DE8D009DDB1B /* AnyOfRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyOfRuleTests.swift; sourceTree = "<group>"; };
+		F18A7B6423F8E1E0009DDB1B /* Builder+AddPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+AddPlugin.swift"; sourceTree = "<group>"; };
+		F18A7B6923F8E202009DDB1B /* Builder+RemovePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+RemovePlugin.swift"; sourceTree = "<group>"; };
+		F18A7B6E23F8E4EB009DDB1B /* Builder+AddRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+AddRule.swift"; sourceTree = "<group>"; };
+		F18A7B7323F8E4F8009DDB1B /* Builder+RemoveRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+RemoveRule.swift"; sourceTree = "<group>"; };
+		F18A7B7823F8E610009DDB1B /* Builder+AddChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+AddChild.swift"; sourceTree = "<group>"; };
+		F18A7B7D23F8E61A009DDB1B /* Builder+RemoveChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+RemoveChild.swift"; sourceTree = "<group>"; };
+		F18A7B8223F8E715009DDB1B /* PrecedenceGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecedenceGroup.swift; sourceTree = "<group>"; };
+		F18A7B8723F8EA1E009DDB1B /* Builder+Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+Build.swift"; sourceTree = "<group>"; };
 		F65FC6BA648C99E07C7C9158 /* Pods_PlugTests_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlugTests_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CC47F68AF1F0BFAC9349F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBE90C94AAA371C6B5D7AC7F /* PluginMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginMock.swift; sourceTree = "<group>"; };
@@ -549,9 +589,25 @@
 			);
 			sourceTree = "<group>";
 		};
+		F18A7B6323F8E175009DDB1B /* DSL */ = {
+			isa = PBXGroup;
+			children = (
+				F18A7B6423F8E1E0009DDB1B /* Builder+AddPlugin.swift */,
+				F18A7B6923F8E202009DDB1B /* Builder+RemovePlugin.swift */,
+				F18A7B6E23F8E4EB009DDB1B /* Builder+AddRule.swift */,
+				F18A7B7323F8E4F8009DDB1B /* Builder+RemoveRule.swift */,
+				F18A7B7823F8E610009DDB1B /* Builder+AddChild.swift */,
+				F18A7B7D23F8E61A009DDB1B /* Builder+RemoveChild.swift */,
+				F18A7B8223F8E715009DDB1B /* PrecedenceGroup.swift */,
+				F18A7B8723F8EA1E009DDB1B /* Builder+Build.swift */,
+			);
+			path = DSL;
+			sourceTree = "<group>";
+		};
 		F2D060D728B27571785A1A24 /* Plug */ = {
 			isa = PBXGroup;
 			children = (
+				F18A7B6323F8E175009DDB1B /* DSL */,
 				D4A4C85FDE652E86D5749094 /* Plugins */,
 				98695CC2492821057811EB04 /* Rules */,
 				31E40967E95E6B51D4BF2895 /* Info.plist */,
@@ -988,18 +1044,26 @@
 			files = (
 				F18A7B4C23F8DCC6009DDB1B /* AllOfRule.swift in Sources */,
 				60D5D114294121FC9C8CF984 /* AnyRule.swift in Sources */,
+				F18A7B7C23F8E610009DDB1B /* Builder+AddChild.swift in Sources */,
 				0EDEFD1608BE74BF4FC68A07 /* AtomRule.swift in Sources */,
+				F18A7B6823F8E1E0009DDB1B /* Builder+AddPlugin.swift in Sources */,
+				F18A7B6D23F8E202009DDB1B /* Builder+RemovePlugin.swift in Sources */,
 				CEEDEDB9593900F24667E2F3 /* DisabledRule.swift in Sources */,
 				E87686B9456C9F6D12B0B280 /* EnabledRule.swift in Sources */,
 				F18A7B5623F8DCDF009DDB1B /* AnyOfRule.swift in Sources */,
 				CB981B2D1B7E033D8C8F72A6 /* IdentifiedPlugin.swift in Sources */,
 				B3EF61C694E8FE70D90B8972 /* PPlugin.swift in Sources */,
+				F18A7B8623F8E715009DDB1B /* PrecedenceGroup.swift in Sources */,
 				F18A7B4323F8D8CB009DDB1B /* InvertedRule.swift in Sources */,
 				70EC07A5013F65B71031BBF2 /* PRule.swift in Sources */,
 				F18A7B5123F8DCD4009DDB1B /* NoneOfRule.swift in Sources */,
 				2DC0826A44667CC5AC09FCAC /* PRuleResolvingContext.swift in Sources */,
 				C6E01ABA489FE78A69CD6A0E /* PluginPoint.swift in Sources */,
+				F18A7B8123F8E61A009DDB1B /* Builder+RemoveChild.swift in Sources */,
+				F18A7B8B23F8EA1E009DDB1B /* Builder+Build.swift in Sources */,
+				F18A7B7723F8E4F8009DDB1B /* Builder+RemoveRule.swift in Sources */,
 				417BBFBED2E323337523B937 /* PluginPointBuilder.swift in Sources */,
+				F18A7B7223F8E4EB009DDB1B /* Builder+AddRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1009,18 +1073,26 @@
 			files = (
 				F18A7B4A23F8DCC6009DDB1B /* AllOfRule.swift in Sources */,
 				9AE67C242F6A71E5904E9E9B /* AnyRule.swift in Sources */,
+				F18A7B7A23F8E610009DDB1B /* Builder+AddChild.swift in Sources */,
 				C2F882B68D368DF990935D20 /* AtomRule.swift in Sources */,
+				F18A7B6623F8E1E0009DDB1B /* Builder+AddPlugin.swift in Sources */,
+				F18A7B6B23F8E202009DDB1B /* Builder+RemovePlugin.swift in Sources */,
 				E50BDF66821B4CA81197532B /* DisabledRule.swift in Sources */,
 				EA1E55081323689FA38E21A1 /* EnabledRule.swift in Sources */,
 				F18A7B5423F8DCDF009DDB1B /* AnyOfRule.swift in Sources */,
 				6EE2A9258633E136B7137A84 /* IdentifiedPlugin.swift in Sources */,
 				74A6EE9B2F01762CEF30F51E /* PPlugin.swift in Sources */,
+				F18A7B8423F8E715009DDB1B /* PrecedenceGroup.swift in Sources */,
 				F18A7B4123F8D8CB009DDB1B /* InvertedRule.swift in Sources */,
 				F0D92126174E1F3C351351B9 /* PRule.swift in Sources */,
 				F18A7B4F23F8DCD4009DDB1B /* NoneOfRule.swift in Sources */,
 				F440DEF4AAF64C3E826D3E01 /* PRuleResolvingContext.swift in Sources */,
 				1F194D5E0A91B0EC181C0D7C /* PluginPoint.swift in Sources */,
+				F18A7B7F23F8E61A009DDB1B /* Builder+RemoveChild.swift in Sources */,
+				F18A7B8923F8EA1E009DDB1B /* Builder+Build.swift in Sources */,
+				F18A7B7523F8E4F8009DDB1B /* Builder+RemoveRule.swift in Sources */,
 				4C9B668002722B353C8F838A /* PluginPointBuilder.swift in Sources */,
+				F18A7B7023F8E4EB009DDB1B /* Builder+AddRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1030,18 +1102,26 @@
 			files = (
 				F18A7B4B23F8DCC6009DDB1B /* AllOfRule.swift in Sources */,
 				46C11BEDBB20CE68AF9DFEDE /* AnyRule.swift in Sources */,
+				F18A7B7B23F8E610009DDB1B /* Builder+AddChild.swift in Sources */,
 				E1649BD8B5403432BE0B7FAD /* AtomRule.swift in Sources */,
+				F18A7B6723F8E1E0009DDB1B /* Builder+AddPlugin.swift in Sources */,
+				F18A7B6C23F8E202009DDB1B /* Builder+RemovePlugin.swift in Sources */,
 				A60059C0B5F56A276FC80A5E /* DisabledRule.swift in Sources */,
 				70EC6D626665AA0F8B724B98 /* EnabledRule.swift in Sources */,
 				F18A7B5523F8DCDF009DDB1B /* AnyOfRule.swift in Sources */,
 				7F46CA7B05400DCBD73940D8 /* IdentifiedPlugin.swift in Sources */,
 				E57DEE6C4E26AB6BE9F6C22E /* PPlugin.swift in Sources */,
+				F18A7B8523F8E715009DDB1B /* PrecedenceGroup.swift in Sources */,
 				F18A7B4223F8D8CB009DDB1B /* InvertedRule.swift in Sources */,
 				2FB6FF2339274E1CBF3DC5F4 /* PRule.swift in Sources */,
 				F18A7B5023F8DCD4009DDB1B /* NoneOfRule.swift in Sources */,
 				90BBFA79A7968A109023CF21 /* PRuleResolvingContext.swift in Sources */,
 				D31AEAFA2FFF64798CBDB78E /* PluginPoint.swift in Sources */,
+				F18A7B8023F8E61A009DDB1B /* Builder+RemoveChild.swift in Sources */,
+				F18A7B8A23F8EA1E009DDB1B /* Builder+Build.swift in Sources */,
+				F18A7B7623F8E4F8009DDB1B /* Builder+RemoveRule.swift in Sources */,
 				205399837D72B2BD8290ADD9 /* PluginPointBuilder.swift in Sources */,
+				F18A7B7123F8E4EB009DDB1B /* Builder+AddRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1071,18 +1151,26 @@
 			files = (
 				F18A7B4923F8DCC6009DDB1B /* AllOfRule.swift in Sources */,
 				D3F9618CF83AE658317AC5FF /* AnyRule.swift in Sources */,
+				F18A7B7923F8E610009DDB1B /* Builder+AddChild.swift in Sources */,
 				5B0E0EBBC236B0DFF0BF8410 /* AtomRule.swift in Sources */,
+				F18A7B6523F8E1E0009DDB1B /* Builder+AddPlugin.swift in Sources */,
+				F18A7B6A23F8E202009DDB1B /* Builder+RemovePlugin.swift in Sources */,
 				896D224A6ADF4836348B6109 /* DisabledRule.swift in Sources */,
 				8DBB74A455AE402C5D09B4DD /* EnabledRule.swift in Sources */,
 				F18A7B5323F8DCDF009DDB1B /* AnyOfRule.swift in Sources */,
 				F626362EFC5518A7EC804CB2 /* IdentifiedPlugin.swift in Sources */,
 				5D68DB5B792852CBC5F3668A /* PPlugin.swift in Sources */,
+				F18A7B8323F8E715009DDB1B /* PrecedenceGroup.swift in Sources */,
 				F18A7B4023F8D8CB009DDB1B /* InvertedRule.swift in Sources */,
 				994A7D0F44B5BEB4112B2271 /* PRule.swift in Sources */,
 				F18A7B4E23F8DCD4009DDB1B /* NoneOfRule.swift in Sources */,
 				7731D42910F540C897DB74AB /* PRuleResolvingContext.swift in Sources */,
 				D711A68C227D05B2984AD2C2 /* PluginPoint.swift in Sources */,
+				F18A7B7E23F8E61A009DDB1B /* Builder+RemoveChild.swift in Sources */,
+				F18A7B8823F8EA1E009DDB1B /* Builder+Build.swift in Sources */,
+				F18A7B7423F8E4F8009DDB1B /* Builder+RemoveRule.swift in Sources */,
 				5B6749C4DE8EA1DD794A40F3 /* PluginPointBuilder.swift in Sources */,
+				F18A7B6F23F8E4EB009DDB1B /* Builder+AddRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

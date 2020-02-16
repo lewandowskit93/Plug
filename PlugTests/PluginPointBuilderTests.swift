@@ -76,4 +76,29 @@ public class PluginPointBuilderTests: XCTestCase {
         XCTAssertTrue(plugins.contains(where: { $0 === p5 }))
         XCTAssertTrue(plugins.contains(where: { $0 === p6 }))
     }
+    
+    func testDSL_WhenUsed_ShouldReturnCorrectPluginPoint() {
+        let p1 = PluginMock()
+        let p2 = PluginMock()
+        let p3 = PluginMock()
+        let p4 = PluginMock()
+        let p5 = PluginMock()
+        let child = PluginPoint<ResolvingContextMock, PluginMock>(rules: [], plugins: [p5], children: [])
+        let rule = DisabledRule<ResolvingContextMock>().any()
+
+        let pp = (sut
+            <+ p1
+            <+ p2
+            >- p2
+            |+ (PluginPointBuilder() §+ DisabledRule().any() <+ p3
+                    |+ (PluginPointBuilder() <+ p4 §+ EnabledRule().any())^
+                )^
+            |+ child |- child
+            §+ rule
+            §- rule
+            )^
+        XCTAssertEqual(1, pp.getAvailablePlugins(context: ResolvingContextMock()).count)
+        let plugins = pp.getAvailablePlugins(context: ResolvingContextMock())
+        XCTAssertTrue(plugins.contains(where: { $0 === p1 }))
+    }
 }

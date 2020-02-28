@@ -47,7 +47,7 @@ github "lewandowskit93/Plug"
 
 To install Plug using **Swift Package Manager** go through following steps:
 
-1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.2.0") ```
+1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.3.0") ```
 2. Add following target dependency in your **Package.swift** ``` dependencies: ["Plug"]) ```
 
 For instance this is how it might look like:
@@ -62,7 +62,7 @@ let package = Package(
             targets: ["YourLibrary"])
     ],
     dependencies: [
-        .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.2.0")
+        .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.3.0")
     ],
     targets: [
         .target(

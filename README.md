@@ -47,7 +47,7 @@ github "lewandowskit93/Plug"
 
 To install Plug using **Swift Package Manager** go through following steps:
 
-1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.2.0") ```
+1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.3.0") ```
 2. Add following target dependency in your **Package.swift** ``` dependencies: ["Plug"]) ```
 
 For instance this is how it might look like:
@@ -62,7 +62,7 @@ let package = Package(
             targets: ["YourLibrary"])
     ],
     dependencies: [
-        .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.2.0")
+        .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.3.0")
     ],
     targets: [
         .target(
@@ -75,6 +75,10 @@ let package = Package(
 ## Overview
 
 Here is a quick overview of functionalities and concepts used in **Plug**.
+
+<p align="center">
+  <img src="Resources/Plug.png" alt="Plug example"/>
+</p>
 
 ### Plugin
 
@@ -111,7 +115,7 @@ It has a hierarchical structure meaning that a plugin point can have *children* 
 The rules applied to a plugin point are also applied to it's children. Plugin points can be built with **PluginPointBuilder**
 
 ### DSL
-Plug defines DSL to shorten building of plugin points. Available operators are:
+Plug defines some operators and DSL to shorten building of plugin points. Available operators are:
 - Adding plugin with operator: *Builder <+ Plugin*
 - Removign plugin with operator: *Builder <- Plugin*
 - Adding rule with operator: *Builder §+ Rule*
@@ -146,7 +150,7 @@ var pluginPoint = PluginPointBuilder()
 var availablePlugins = pluginPoint.getAvailablePlugins(context: FooContext())
 ```
 
-The same plugin point could be defined using DSL as follows:
+The same plugin point could be defined using operators as follows:
 
 
 ```swift
@@ -164,6 +168,25 @@ var pluginPoint = (
            )^
     )^
 var availablePlugins = pluginPoint.getAvailablePlugins(context: FooContext())
+```
+
+or using DSL as follows:
+
+```swift
+var pluginPoint = PluginPoint {
+    child {
+        PluginPoint {
+            plugin(contextType: Context.self) { pluginFactory.feature1Plugin() }
+            rule(pluginType: Plugin.self) { FeatureEnabledRule(id: "feature_1").any() }
+        }
+    }
+    child {
+        PluginPoint {
+            plugin(contextType: Context.self) { pluginFactory.feature2Plugin() }
+            rule(pluginType: Plugin.self) { FeatureEnabledRule(id: "feature_2").any() }
+        }
+    }
+}
 ```
 
 For more detailed example please see the source code.

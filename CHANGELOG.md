@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+## 0.3.0
+- Added DSL & function builder support
+
 ## 0.2.0
 - Added basic documentation
 - Created ios example instead of macos

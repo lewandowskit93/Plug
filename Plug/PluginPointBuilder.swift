@@ -16,7 +16,7 @@
      .build()
  ).build()
  ```
- # Example usage DSL:
+ # Example operators usage:
  ```swift
  var pluginPoint = (
  PluginPointBuilder()
@@ -28,13 +28,21 @@
  )^
  ```
 */
+
+@_functionBuilder
 public final class PluginPointBuilder<Context: PRuleResolvingContext, Plugin: PPlugin> {
     public private(set) var rules: [AnyRule<Context>] = []
     public private(set) var plugins: [Plugin] = []
     public private(set) var children: [PluginPoint<Context, Plugin>] = []
     
+    // Creates a builder
     public init() {
         
+    }
+    
+    // Builds block of plugin point entries
+    public static func buildBlock(_ entries: PluginPointEntry<Context, Plugin>...) -> [PluginPointEntry<Context, Plugin>] {
+        return entries
     }
     
     /// Finalizes the build and returns builded PluginPoint

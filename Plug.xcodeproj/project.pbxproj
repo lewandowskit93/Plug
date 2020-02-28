@@ -179,7 +179,7 @@
 		D189C3F91E21E7165816055B /* AtomRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6FB4023687C4FAC161AE1 /* AtomRuleTests.swift */; };
 		D1CBAF7E55BC5F25187A1A16 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928347292E5BE01FCEEECBB5 /* SearchView.swift */; };
 		D31AEAFA2FFF64798CBDB78E /* PluginPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0379C906D8097DC2842A6F /* PluginPoint.swift */; };
-		D33C1E6C7CA7FEA9A9ABA46D /* TabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24381ECD2E55E969DD8329 /* TabbarViewModel.swift */; };
+		D33C1E6C7CA7FEA9A9ABA46D /* TabbarResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24381ECD2E55E969DD8329 /* TabbarResolver.swift */; };
 		D3F9618CF83AE658317AC5FF /* AnyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DB29086283C974D1595B7A /* AnyRule.swift */; };
 		D424D308441E52A70D6A9A1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61D60C17C60FDD15005D86 /* SceneDelegate.swift */; };
 		D534F7C2F507F12F543FED5F /* Rule+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEAF138A4B3CCFAEF5F4BB /* Rule+Any.swift */; };
@@ -204,6 +204,7 @@
 		EE2DD6D09897517789FD9CB8 /* TabFeaturesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1099584DC10607895AA8BE /* TabFeaturesFactory.swift */; };
 		EEFF85A6C36D51CE9B03D27B /* AnyOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BEE4ED0ABAD7EF943EC1C /* AnyOfRuleTests.swift */; };
 		F0D92126174E1F3C351351B9 /* PRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AB953D44967E73DA60F123 /* PRule.swift */; };
+		F1A576E62409DC5B00D35DA8 /* PSubscriptionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576E52409DC5B00D35DA8 /* PSubscriptionContext.swift */; };
 		F288D55123C68BFD788D001E /* DSL+Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC2DA1D0501DB8E6689B86 /* DSL+Plugin.swift */; };
 		F440DEF4AAF64C3E826D3E01 /* PRuleResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E1DEB6B505B9E835C5B00 /* PRuleResolvingContext.swift */; };
 		F55450A5CDA620D0C1966EA0 /* TabbarContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FE3E67BA39E73C6F61766 /* TabbarContext.swift */; };
@@ -384,7 +385,7 @@
 		C0A77092FAF5C90B4319C42A /* DSL+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSL+Child.swift"; sourceTree = "<group>"; };
 		C22DE1FB2F15C9BC75FE496D /* Pods-PlugTests_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlugTests_macOS.release.xcconfig"; path = "Target Support Files/Pods-PlugTests_macOS/Pods-PlugTests_macOS.release.xcconfig"; sourceTree = "<group>"; };
 		C7BCE564B2A78E0DC6897249 /* EnabledRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnabledRuleTests.swift; sourceTree = "<group>"; };
-		CC24381ECD2E55E969DD8329 /* TabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewModel.swift; sourceTree = "<group>"; };
+		CC24381ECD2E55E969DD8329 /* TabbarResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarResolver.swift; sourceTree = "<group>"; };
 		D1EC2DA1D0501DB8E6689B86 /* DSL+Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSL+Plugin.swift"; sourceTree = "<group>"; };
 		D2A2197E9C2F2709593A25F9 /* PFeatureResolvableContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFeatureResolvableContext.swift; sourceTree = "<group>"; };
 		D49451CA22A979F0730D7BEE /* PluginPointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginPointBuilder.swift; sourceTree = "<group>"; };
@@ -399,6 +400,7 @@
 		EB9A693E536F43B08EDD7703 /* Pods_PlugTests_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlugTests_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC49A807EA6D57EAC7BF5AD6 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		F0D07FCB7C67FFA084EBE322 /* SearchPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlugin.swift; sourceTree = "<group>"; };
+		F1A576E52409DC5B00D35DA8 /* PSubscriptionContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSubscriptionContext.swift; sourceTree = "<group>"; };
 		F493ECC3675B59633CCC305B /* Builder+RemovePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+RemovePlugin.swift"; sourceTree = "<group>"; };
 		F7D3A9B749C1C876DCC11342 /* Pods-PlugTests_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlugTests_iOS.debug.xcconfig"; path = "Target Support Files/Pods-PlugTests_iOS/Pods-PlugTests_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FBE90C94AAA371C6B5D7AC7F /* PluginMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginMock.swift; sourceTree = "<group>"; };
@@ -692,8 +694,9 @@
 				24BDF85A363957B23996593F /* HasSubscriptionRule.swift */,
 				764FE3E67BA39E73C6F61766 /* TabbarContext.swift */,
 				EA4AB2BEFCFA346999127C63 /* TabbarView.swift */,
-				CC24381ECD2E55E969DD8329 /* TabbarViewModel.swift */,
+				CC24381ECD2E55E969DD8329 /* TabbarResolver.swift */,
 				3F1099584DC10607895AA8BE /* TabFeaturesFactory.swift */,
+				F1A576E52409DC5B00D35DA8 /* PSubscriptionContext.swift */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -1390,6 +1393,7 @@
 				53E993224E25100189FF36B4 /* ExamplesListPluginFactory.swift in Sources */,
 				C6475ACE86EC64C7E29F4F6A /* ExamplesListResolver.swift in Sources */,
 				7B7386C2D8E05F9AEE3DD675 /* PFeatureResolvableContext.swift in Sources */,
+				F1A576E62409DC5B00D35DA8 /* PSubscriptionContext.swift in Sources */,
 				D424D308441E52A70D6A9A1A /* SceneDelegate.swift in Sources */,
 				8CFA66D184566D8077C9C43A /* SearchPlugin.swift in Sources */,
 				4EA8A80E23C22730750A9FBF /* SearchPluginFactory.swift in Sources */,
@@ -1400,7 +1404,7 @@
 				EE2DD6D09897517789FD9CB8 /* TabFeaturesFactory.swift in Sources */,
 				F55450A5CDA620D0C1966EA0 /* TabbarContext.swift in Sources */,
 				DD08D3D3682FA5BBA0551BFF /* TabbarView.swift in Sources */,
-				D33C1E6C7CA7FEA9A9ABA46D /* TabbarViewModel.swift in Sources */,
+				D33C1E6C7CA7FEA9A9ABA46D /* TabbarResolver.swift in Sources */,
 				8E49B1A29E6D31672A43A069 /* ViewPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

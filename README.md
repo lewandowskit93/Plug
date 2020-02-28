@@ -146,7 +146,7 @@ var pluginPoint = PluginPointBuilder()
 var availablePlugins = pluginPoint.getAvailablePlugins(context: FooContext())
 ```
 
-The same plugin point could be defined using DSL as follows:
+The same plugin point could be defined using operators as follows:
 
 
 ```swift
@@ -164,6 +164,25 @@ var pluginPoint = (
            )^
     )^
 var availablePlugins = pluginPoint.getAvailablePlugins(context: FooContext())
+```
+
+or using DSL as follows:
+
+```swift
+var pluginPoint = PluginPoint {
+    child {
+        PluginPoint {
+            plugin(contextType: Context.self) { pluginFactory.feature1Plugin() }
+            rule(pluginType: Plugin.self) { FeatureEnabledRule(id: "feature_1").any() }
+        }
+    }
+    child {
+        PluginPoint {
+            plugin(contextType: Context.self) { pluginFactory.feature2Plugin() }
+            rule(pluginType: Plugin.self) { FeatureEnabledRule(id: "feature_2").any() }
+        }
+    }
+}
 ```
 
 For more detailed example please see the source code.

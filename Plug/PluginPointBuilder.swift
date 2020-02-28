@@ -35,10 +35,12 @@ public final class PluginPointBuilder<Context: PRuleResolvingContext, Plugin: PP
     public private(set) var plugins: [Plugin] = []
     public private(set) var children: [PluginPoint<Context, Plugin>] = []
     
+    // Creates a builder
     public init() {
         
     }
     
+    // Builds block of plugin point entries
     public static func buildBlock(_ entries: PluginPointEntry<Context, Plugin>...) -> [PluginPointEntry<Context, Plugin>] {
         return entries
     }

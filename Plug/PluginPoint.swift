@@ -6,14 +6,14 @@
 //  Copyright © 2020 LionSoftware.org. All rights reserved.
 //
 
-/// Defines a single pluggin slot that pluggins can be attached to.
+/// Defines a single pluggin slot that pluggins are be attached to.
 public final class PluginPoint<Context: PRuleResolvingContext, Plugin: PPlugin> {
     let rules: [AnyRule<Context>]
     let plugins: [Plugin]
     let children: [PluginPoint<Context, Plugin>]
     
     /// Creates a plugin point
-    init(rules: [AnyRule<Context>], plugins: [Plugin], children: [PluginPoint<Context, Plugin>]) {
+    public init(rules: [AnyRule<Context>], plugins: [Plugin], children: [PluginPoint<Context, Plugin>]) {
         self.rules = rules
         self.plugins = plugins
         self.children = children

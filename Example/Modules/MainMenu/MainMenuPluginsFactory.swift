@@ -29,7 +29,15 @@ struct MainMenuPluginsFactory {
     }
 
     func feature1Plugin() -> IdentifiedPlugin<ViewPlugin<AnyView>> {
-        return featurePlugin(id: "feature_1", title: "Feature 1")
+        return IdentifiedPlugin(
+            id: "feature_1",
+            wrappedValue: ViewPlugin {
+                return AnyView(
+                    NavigationLink(
+                        destination: LazyView { TabbarView() }
+                    ) { Text("Feature 1") })
+            }
+        )
     }
     
     func feature2Plugin() -> IdentifiedPlugin<ViewPlugin<AnyView>> {

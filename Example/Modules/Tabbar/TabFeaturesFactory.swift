@@ -11,9 +11,9 @@ import Combine
 import Plug
 
 struct TabFeaturesFactory {
-    func freeFeature() -> IdentifiedPlugin<ViewPlugin<AnyView>> {
-        return IdentifiedPlugin(id: "tab_2", wrappedValue: ViewPlugin {
-            AnyView(Text("Free feature")
+    func freeFeature1() -> IdentifiedPlugin<ViewPlugin<AnyView>> {
+        return IdentifiedPlugin(id: "free_feature_1", wrappedValue: ViewPlugin {
+            AnyView(Text("Free feature 1")
               .tabItem {
                  Image(systemName: "person.fill")
                  Text("Free")
@@ -21,7 +21,7 @@ struct TabFeaturesFactory {
         })
     }
     
-    func premiumFeature() -> IdentifiedPlugin<ViewPlugin<AnyView>> {
+    func premiumFeature1() -> IdentifiedPlugin<ViewPlugin<AnyView>> {
         return IdentifiedPlugin(id: "tab_1", wrappedValue: ViewPlugin {
             AnyView(Text("Premium feature")
               .tabItem {

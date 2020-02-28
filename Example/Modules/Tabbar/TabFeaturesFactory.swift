@@ -15,7 +15,7 @@ struct TabFeaturesFactory {
         return IdentifiedPlugin(id: "tab_2", wrappedValue: ViewPlugin {
             AnyView(Text("Free feature")
               .tabItem {
-                 Image(systemName: "phone.fill")
+                 Image(systemName: "person.fill")
                  Text("Free")
                })
         })

@@ -22,11 +22,15 @@ public final class PluginPoint<Context: PRuleResolvingContext, Plugin: PPlugin> 
     /** Creates plugin point with the use of function builder
      # Example usage:
      ```swift
-     var pluginPoint = PluginPoint() {
-        child {
-             plugin(contextType: MyContext.self) { pluginFactory.feature1Plugin() }
-             rule(pluginType: MyPlugin.self) { FeatureEnabledRule(id: "feature_1") }
-        }
+     var pluginPoint = PluginPoint {
+         child {
+             PluginPoint {
+                 rule(pluginType: Plugin.self) {
+                     &&[FeatureEnabledRule<Context>(id: "tab_1").any(), HasSubscriptionRule<Context>().any()]
+                 }
+                 plugin(contextType: Context.self) { pluginFactory.premiumFeature() }
+             }
+         }
      }
      ```
      */
@@ -49,6 +53,38 @@ public final class PluginPoint<Context: PRuleResolvingContext, Plugin: PPlugin> 
         self.children = children
     }
     
+    /** Creates plugin point with the use of function builder
+    # Example usage:
+    ```swift
+    var pluginPoint = PluginPoint {
+        child {
+            PluginPoint {
+                rule(pluginType: Plugin.self) {
+                    &&[FeatureEnabledRule<Context>(id: "tab_1").any(), HasSubscriptionRule<Context>().any()]
+                }
+                plugin(contextType: Context.self) { pluginFactory.premiumFeature() }
+            }
+        }
+    }
+    ```
+    */
+    public init(@PluginPointBuilder<Context, Plugin> entry: () -> PluginPointEntry<Context, Plugin>) {
+        var rules = [AnyRule<Context>]()
+        var plugins = [Plugin]()
+        var children = [PluginPoint<Context, Plugin>]()
+        switch entry() {
+        case .rule(let rule):
+            rules.append(rule)
+        case .plugin(let plugin):
+            plugins.append(plugin)
+        case .child(let child):
+            children.append(child)
+        }
+        self.rules = rules
+        self.plugins = plugins
+        self.children = children
+    }
+
     /// Gets available plugins if the context meets the rules conditions
     public func getAvailablePlugins(context: Context) -> [Plugin] {
         for rule in rules {

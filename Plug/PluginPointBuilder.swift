@@ -42,7 +42,7 @@ public final class PluginPointBuilder<Context: PRuleResolvingContext, Plugin: PP
     public static func buildBlock(_ entries: PluginPointEntry<Context, Plugin>...) -> [PluginPointEntry<Context, Plugin>] {
         return entries
     }
-        
+    
     /// Finalizes the build and returns builded PluginPoint
     public func build() -> PluginPoint<Context, Plugin> {
         return PluginPoint(rules: rules, plugins: plugins, children: children)

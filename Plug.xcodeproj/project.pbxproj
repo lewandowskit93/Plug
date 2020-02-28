@@ -321,8 +321,8 @@
 		350D3D566537296A9E432B23 /* Builder+AddPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+AddPlugin.swift"; sourceTree = "<group>"; };
 		360AF1846B15B2B12CDCB920 /* NoneOfRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneOfRuleTests.swift; sourceTree = "<group>"; };
 		36E2B28AB21E76C964C1EEFB /* Builder+AddChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+AddChild.swift"; sourceTree = "<group>"; };
-		396ECE33EA9A5C762A3FE9C2 /* PlugTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PlugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D6F0A9BC3AEA7B4635E8E99 /* PlugTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PlugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		396ECE33EA9A5C762A3FE9C2 /* PlugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6F0A9BC3AEA7B4635E8E99 /* PlugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1099584DC10607895AA8BE /* TabFeaturesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabFeaturesFactory.swift; sourceTree = "<group>"; };
 		415AEBB73696E6F37DF036A4 /* Pods_PlugTests_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlugTests_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4307AC1245DAE5F124326160 /* Builder+AddRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+AddRule.swift"; sourceTree = "<group>"; };
@@ -378,7 +378,7 @@
 		B5B22A6307B921F64F010C41 /* AtomRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomRule.swift; sourceTree = "<group>"; };
 		B715C575D0B4DAB39B4A2575 /* Builder+RemovePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+RemovePlugin.swift"; sourceTree = "<group>"; };
 		B9AB953D44967E73DA60F123 /* PRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRule.swift; sourceTree = "<group>"; };
-		BDAB001D3C4688EFE24D6778 /* Example.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAB001D3C4688EFE24D6778 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC6E1D825BFEF19C286D55C /* PlugTests_macOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlugTests_macOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		C08F45FF1CF168359D65197C /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		C7BCE564B2A78E0DC6897249 /* EnabledRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnabledRuleTests.swift; sourceTree = "<group>"; };

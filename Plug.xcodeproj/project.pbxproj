@@ -196,6 +196,18 @@
 		F1A576B724089C6200D35DA8 /* PluginPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576B624089C6200D35DA8 /* PluginPointTests.swift */; };
 		F1A576B824089C6200D35DA8 /* PluginPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576B624089C6200D35DA8 /* PluginPointTests.swift */; };
 		F1A576B924089C6200D35DA8 /* PluginPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576B624089C6200D35DA8 /* PluginPointTests.swift */; };
+		F1A576C62408A09D00D35DA8 /* DSL+Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576C52408A09D00D35DA8 /* DSL+Rule.swift */; };
+		F1A576C72408A09D00D35DA8 /* DSL+Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576C52408A09D00D35DA8 /* DSL+Rule.swift */; };
+		F1A576C82408A09D00D35DA8 /* DSL+Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576C52408A09D00D35DA8 /* DSL+Rule.swift */; };
+		F1A576C92408A09D00D35DA8 /* DSL+Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576C52408A09D00D35DA8 /* DSL+Rule.swift */; };
+		F1A576CB2408A0B700D35DA8 /* DSL+Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576CA2408A0B700D35DA8 /* DSL+Plugin.swift */; };
+		F1A576CC2408A0B700D35DA8 /* DSL+Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576CA2408A0B700D35DA8 /* DSL+Plugin.swift */; };
+		F1A576CD2408A0B700D35DA8 /* DSL+Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576CA2408A0B700D35DA8 /* DSL+Plugin.swift */; };
+		F1A576CE2408A0B700D35DA8 /* DSL+Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576CA2408A0B700D35DA8 /* DSL+Plugin.swift */; };
+		F1A576D02408A0C700D35DA8 /* DSL+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576CF2408A0C700D35DA8 /* DSL+Child.swift */; };
+		F1A576D12408A0C700D35DA8 /* DSL+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576CF2408A0C700D35DA8 /* DSL+Child.swift */; };
+		F1A576D22408A0C700D35DA8 /* DSL+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576CF2408A0C700D35DA8 /* DSL+Child.swift */; };
+		F1A576D32408A0C700D35DA8 /* DSL+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576CF2408A0C700D35DA8 /* DSL+Child.swift */; };
 		F3A5A061DC9BB39CCC01D12D /* Builder+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB627885008C2F221F0806CD /* Builder+Build.swift */; };
 		F440DEF4AAF64C3E826D3E01 /* PRuleResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E1DEB6B505B9E835C5B00 /* PRuleResolvingContext.swift */; };
 		F55450A5CDA620D0C1966EA0 /* TabbarContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FE3E67BA39E73C6F61766 /* TabbarContext.swift */; };
@@ -389,6 +401,9 @@
 		EF74609A19FEBBC6FC14D773 /* HasSubscriptionRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasSubscriptionRule.swift; sourceTree = "<group>"; };
 		F0D07FCB7C67FFA084EBE322 /* SearchPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlugin.swift; sourceTree = "<group>"; };
 		F1A576B624089C6200D35DA8 /* PluginPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginPointTests.swift; sourceTree = "<group>"; };
+		F1A576C52408A09D00D35DA8 /* DSL+Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSL+Rule.swift"; sourceTree = "<group>"; };
+		F1A576CA2408A0B700D35DA8 /* DSL+Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSL+Plugin.swift"; sourceTree = "<group>"; };
+		F1A576CF2408A0C700D35DA8 /* DSL+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSL+Child.swift"; sourceTree = "<group>"; };
 		F7F7BC2BE040D8AF98AD4466 /* HelloDSLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloDSLView.swift; sourceTree = "<group>"; };
 		F8A8E426633980C368D4A5EE /* Pods-PlugTests_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlugTests_iOS.debug.xcconfig"; path = "Target Support Files/Pods-PlugTests_iOS/Pods-PlugTests_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FBE90C94AAA371C6B5D7AC7F /* PluginMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginMock.swift; sourceTree = "<group>"; };
@@ -537,19 +552,9 @@
 		4EC7007EF172F68EFCA21B5F /* DSL */ = {
 			isa = PBXGroup;
 			children = (
-				36E2B28AB21E76C964C1EEFB /* Builder+AddChild.swift */,
-				350D3D566537296A9E432B23 /* Builder+AddPlugin.swift */,
-				4307AC1245DAE5F124326160 /* Builder+AddRule.swift */,
-				AB627885008C2F221F0806CD /* Builder+Build.swift */,
-				E8A419833D67CCA6CAD2079E /* Builder+RemoveChild.swift */,
-				B715C575D0B4DAB39B4A2575 /* Builder+RemovePlugin.swift */,
-				AF15229001E5721A7AB73A3A /* Builder+RemoveRule.swift */,
-				6E091C95EEFD89F01E0B46EE /* PluginPointEntry.swift */,
-				93FC65DBDB95D8DC350CAA74 /* PrecedenceGroup.swift */,
-				94CB5FCB27152F72E08A8592 /* Rule+All.swift */,
-				9A751A388211B579ADC4DFE8 /* Rule+Any.swift */,
-				0CC40CBB7403B06DCA92C73C /* Rule+Negate.swift */,
-				1A0EDE740A8E38BC59A2FFF8 /* Rule+None.swift */,
+				F1A576C42408A07E00D35DA8 /* Descriptive */,
+				F1A576C32408A07300D35DA8 /* RuleOperators */,
+				F1A576C22408A04300D35DA8 /* PluginPointOperators */,
 			);
 			path = DSL;
 			sourceTree = "<group>";
@@ -712,6 +717,43 @@
 				0B81678529D216AF55E29B01 /* Pods */,
 				8661116794F5D6DBA392FE61 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		F1A576C22408A04300D35DA8 /* PluginPointOperators */ = {
+			isa = PBXGroup;
+			children = (
+				36E2B28AB21E76C964C1EEFB /* Builder+AddChild.swift */,
+				350D3D566537296A9E432B23 /* Builder+AddPlugin.swift */,
+				4307AC1245DAE5F124326160 /* Builder+AddRule.swift */,
+				AB627885008C2F221F0806CD /* Builder+Build.swift */,
+				E8A419833D67CCA6CAD2079E /* Builder+RemoveChild.swift */,
+				B715C575D0B4DAB39B4A2575 /* Builder+RemovePlugin.swift */,
+				AF15229001E5721A7AB73A3A /* Builder+RemoveRule.swift */,
+				93FC65DBDB95D8DC350CAA74 /* PrecedenceGroup.swift */,
+			);
+			path = PluginPointOperators;
+			sourceTree = "<group>";
+		};
+		F1A576C32408A07300D35DA8 /* RuleOperators */ = {
+			isa = PBXGroup;
+			children = (
+				94CB5FCB27152F72E08A8592 /* Rule+All.swift */,
+				9A751A388211B579ADC4DFE8 /* Rule+Any.swift */,
+				0CC40CBB7403B06DCA92C73C /* Rule+Negate.swift */,
+				1A0EDE740A8E38BC59A2FFF8 /* Rule+None.swift */,
+			);
+			path = RuleOperators;
+			sourceTree = "<group>";
+		};
+		F1A576C42408A07E00D35DA8 /* Descriptive */ = {
+			isa = PBXGroup;
+			children = (
+				6E091C95EEFD89F01E0B46EE /* PluginPointEntry.swift */,
+				F1A576C52408A09D00D35DA8 /* DSL+Rule.swift */,
+				F1A576CA2408A0B700D35DA8 /* DSL+Plugin.swift */,
+				F1A576CF2408A0C700D35DA8 /* DSL+Child.swift */,
+			);
+			path = Descriptive;
 			sourceTree = "<group>";
 		};
 		F2D060D728B27571785A1A24 /* Plug */ = {
@@ -1163,6 +1205,7 @@
 				6F64145B36BC2851042BA727 /* AllOfRule.swift in Sources */,
 				0A80FE0CC53B43C066F9B4F0 /* AnyOfRule.swift in Sources */,
 				60D5D114294121FC9C8CF984 /* AnyRule.swift in Sources */,
+				F1A576C92408A09D00D35DA8 /* DSL+Rule.swift in Sources */,
 				0EDEFD1608BE74BF4FC68A07 /* AtomRule.swift in Sources */,
 				D3DA7DD8B9DF4C971F450C9C /* Builder+AddChild.swift in Sources */,
 				5891018796238E764B1D0C42 /* Builder+AddPlugin.swift in Sources */,
@@ -1175,6 +1218,7 @@
 				E87686B9456C9F6D12B0B280 /* EnabledRule.swift in Sources */,
 				CB981B2D1B7E033D8C8F72A6 /* IdentifiedPlugin.swift in Sources */,
 				60A67DA33D98B436D55968F1 /* InvertedRule.swift in Sources */,
+				F1A576CE2408A0B700D35DA8 /* DSL+Plugin.swift in Sources */,
 				E7C00E697EEE6F2DBE40679C /* NoneOfRule.swift in Sources */,
 				B3EF61C694E8FE70D90B8972 /* PPlugin.swift in Sources */,
 				70EC07A5013F65B71031BBF2 /* PRule.swift in Sources */,
@@ -1186,6 +1230,7 @@
 				27D3983AB3001BA2F2614209 /* Rule+All.swift in Sources */,
 				83335023CCF69DC88D62FE4D /* Rule+Any.swift in Sources */,
 				B5DC700DD96979B4463B0E2B /* Rule+Negate.swift in Sources */,
+				F1A576D32408A0C700D35DA8 /* DSL+Child.swift in Sources */,
 				BBD9DCDD4508CD6377F9E73E /* Rule+None.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1197,6 +1242,7 @@
 				71939D7D42399077B6925646 /* AllOfRule.swift in Sources */,
 				12354D74CDA7099F1B2A6975 /* AnyOfRule.swift in Sources */,
 				9AE67C242F6A71E5904E9E9B /* AnyRule.swift in Sources */,
+				F1A576C72408A09D00D35DA8 /* DSL+Rule.swift in Sources */,
 				C2F882B68D368DF990935D20 /* AtomRule.swift in Sources */,
 				7942B71B7F0F556DD2CDC20C /* Builder+AddChild.swift in Sources */,
 				9AD9CE33D859201B8F2776DE /* Builder+AddPlugin.swift in Sources */,
@@ -1209,6 +1255,7 @@
 				EA1E55081323689FA38E21A1 /* EnabledRule.swift in Sources */,
 				6EE2A9258633E136B7137A84 /* IdentifiedPlugin.swift in Sources */,
 				388C5A2D604FE3AFA40447FA /* InvertedRule.swift in Sources */,
+				F1A576CC2408A0B700D35DA8 /* DSL+Plugin.swift in Sources */,
 				7AEAED8641E608185CC93DF1 /* NoneOfRule.swift in Sources */,
 				74A6EE9B2F01762CEF30F51E /* PPlugin.swift in Sources */,
 				F0D92126174E1F3C351351B9 /* PRule.swift in Sources */,
@@ -1220,6 +1267,7 @@
 				A3CAF1EAACE693684AF849DF /* Rule+All.swift in Sources */,
 				542B3EB5BDED0E31A3A312F5 /* Rule+Any.swift in Sources */,
 				8DF4F7C3DD21C4D0FC4B9180 /* Rule+Negate.swift in Sources */,
+				F1A576D12408A0C700D35DA8 /* DSL+Child.swift in Sources */,
 				87B64643917BDCD5AAFF979A /* Rule+None.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1231,6 +1279,7 @@
 				765759D3EC620DAA2CD298BD /* AllOfRule.swift in Sources */,
 				24DCF6178304346ADBC981A5 /* AnyOfRule.swift in Sources */,
 				46C11BEDBB20CE68AF9DFEDE /* AnyRule.swift in Sources */,
+				F1A576C82408A09D00D35DA8 /* DSL+Rule.swift in Sources */,
 				E1649BD8B5403432BE0B7FAD /* AtomRule.swift in Sources */,
 				902D3A6371AC5541D166D331 /* Builder+AddChild.swift in Sources */,
 				73A52D331884D4D51C4E280F /* Builder+AddPlugin.swift in Sources */,
@@ -1243,6 +1292,7 @@
 				70EC6D626665AA0F8B724B98 /* EnabledRule.swift in Sources */,
 				7F46CA7B05400DCBD73940D8 /* IdentifiedPlugin.swift in Sources */,
 				DA246F05EA75EBB538488E53 /* InvertedRule.swift in Sources */,
+				F1A576CD2408A0B700D35DA8 /* DSL+Plugin.swift in Sources */,
 				7772E0757B78B5CA13F0C04E /* NoneOfRule.swift in Sources */,
 				E57DEE6C4E26AB6BE9F6C22E /* PPlugin.swift in Sources */,
 				2FB6FF2339274E1CBF3DC5F4 /* PRule.swift in Sources */,
@@ -1254,6 +1304,7 @@
 				0D5A8F28C0AF8E2F0C5B5C19 /* Rule+All.swift in Sources */,
 				D27535EBE503CB49F1326086 /* Rule+Any.swift in Sources */,
 				A32FB0649C6C315039160FCD /* Rule+Negate.swift in Sources */,
+				F1A576D22408A0C700D35DA8 /* DSL+Child.swift in Sources */,
 				CBF07F48B36ECB09293A3053 /* Rule+None.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1287,6 +1338,7 @@
 				8C56062743FB913E0F0AE941 /* AllOfRule.swift in Sources */,
 				175DFCDD2CFD8F14296B457B /* AnyOfRule.swift in Sources */,
 				D3F9618CF83AE658317AC5FF /* AnyRule.swift in Sources */,
+				F1A576C62408A09D00D35DA8 /* DSL+Rule.swift in Sources */,
 				5B0E0EBBC236B0DFF0BF8410 /* AtomRule.swift in Sources */,
 				62DD362B1656E98008F65D95 /* Builder+AddChild.swift in Sources */,
 				4A9A00AD4E46DFE61EBA3649 /* Builder+AddPlugin.swift in Sources */,
@@ -1299,6 +1351,7 @@
 				8DBB74A455AE402C5D09B4DD /* EnabledRule.swift in Sources */,
 				F626362EFC5518A7EC804CB2 /* IdentifiedPlugin.swift in Sources */,
 				AF2204A2E95F5BBCD036D014 /* InvertedRule.swift in Sources */,
+				F1A576CB2408A0B700D35DA8 /* DSL+Plugin.swift in Sources */,
 				0A15B2BE186136300C79660B /* NoneOfRule.swift in Sources */,
 				5D68DB5B792852CBC5F3668A /* PPlugin.swift in Sources */,
 				994A7D0F44B5BEB4112B2271 /* PRule.swift in Sources */,
@@ -1310,6 +1363,7 @@
 				0144459245C163AB808D8D34 /* Rule+All.swift in Sources */,
 				8FA4DED0719D96B0663A0003 /* Rule+Any.swift in Sources */,
 				44ABA41D6EFA416C562D3D5E /* Rule+Negate.swift in Sources */,
+				F1A576D02408A0C700D35DA8 /* DSL+Child.swift in Sources */,
 				61468DD90431259A86930A8D /* Rule+None.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -101,5 +101,5 @@ public class PluginPointBuilderTests: XCTestCase {
         XCTAssertEqual(1, pp.getAvailablePlugins(context: ResolvingContextMock()).count)
         let plugins = pp.getAvailablePlugins(context: ResolvingContextMock())
         XCTAssertTrue(plugins.contains(where: { $0 === p1 }))
-    }
+    }    
 }

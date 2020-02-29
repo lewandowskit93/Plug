@@ -31,6 +31,5 @@ final class TabbarResolver {
                 §+ (&&[FeatureEnabledRule<Context>(id: "call").any(), HasSubscriptionRule<Context>().any()]).any()
             )^
         )^
-        
     }
 }

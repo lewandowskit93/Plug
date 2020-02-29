@@ -205,6 +205,14 @@
 		EEFF85A6C36D51CE9B03D27B /* AnyOfRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BEE4ED0ABAD7EF943EC1C /* AnyOfRuleTests.swift */; };
 		F0D92126174E1F3C351351B9 /* PRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AB953D44967E73DA60F123 /* PRule.swift */; };
 		F1A576E62409DC5B00D35DA8 /* PSubscriptionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576E52409DC5B00D35DA8 /* PSubscriptionContext.swift */; };
+		F1A576E92409E4E500D35DA8 /* CalculatorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576E82409E4E500D35DA8 /* CalculatorPlugin.swift */; };
+		F1A576ED2409E5C700D35DA8 /* AdditionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576EC2409E5C700D35DA8 /* AdditionOperation.swift */; };
+		F1A576EF2409E5D000D35DA8 /* SubtractionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576EE2409E5D000D35DA8 /* SubtractionOperation.swift */; };
+		F1A576F12409E5DE00D35DA8 /* MultiplicationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576F02409E5DE00D35DA8 /* MultiplicationOperation.swift */; };
+		F1A576F32409E62800D35DA8 /* PCalculatorOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576F22409E62800D35DA8 /* PCalculatorOperation.swift */; };
+		F1A576F52409E70A00D35DA8 /* CalculatorResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576F42409E70A00D35DA8 /* CalculatorResolver.swift */; };
+		F1A576F72409E75100D35DA8 /* CalculatorContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576F62409E75100D35DA8 /* CalculatorContext.swift */; };
+		F1A576F92409E8AF00D35DA8 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A576F82409E8AF00D35DA8 /* CalculatorView.swift */; };
 		F288D55123C68BFD788D001E /* DSL+Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC2DA1D0501DB8E6689B86 /* DSL+Plugin.swift */; };
 		F440DEF4AAF64C3E826D3E01 /* PRuleResolvingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E1DEB6B505B9E835C5B00 /* PRuleResolvingContext.swift */; };
 		F55450A5CDA620D0C1966EA0 /* TabbarContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FE3E67BA39E73C6F61766 /* TabbarContext.swift */; };
@@ -401,6 +409,14 @@
 		EC49A807EA6D57EAC7BF5AD6 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		F0D07FCB7C67FFA084EBE322 /* SearchPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlugin.swift; sourceTree = "<group>"; };
 		F1A576E52409DC5B00D35DA8 /* PSubscriptionContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSubscriptionContext.swift; sourceTree = "<group>"; };
+		F1A576E82409E4E500D35DA8 /* CalculatorPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorPlugin.swift; sourceTree = "<group>"; };
+		F1A576EC2409E5C700D35DA8 /* AdditionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionOperation.swift; sourceTree = "<group>"; };
+		F1A576EE2409E5D000D35DA8 /* SubtractionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionOperation.swift; sourceTree = "<group>"; };
+		F1A576F02409E5DE00D35DA8 /* MultiplicationOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationOperation.swift; sourceTree = "<group>"; };
+		F1A576F22409E62800D35DA8 /* PCalculatorOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCalculatorOperation.swift; sourceTree = "<group>"; };
+		F1A576F42409E70A00D35DA8 /* CalculatorResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorResolver.swift; sourceTree = "<group>"; };
+		F1A576F62409E75100D35DA8 /* CalculatorContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorContext.swift; sourceTree = "<group>"; };
+		F1A576F82409E8AF00D35DA8 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		F493ECC3675B59633CCC305B /* Builder+RemovePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+RemovePlugin.swift"; sourceTree = "<group>"; };
 		F7D3A9B749C1C876DCC11342 /* Pods-PlugTests_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlugTests_iOS.debug.xcconfig"; path = "Target Support Files/Pods-PlugTests_iOS/Pods-PlugTests_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FBE90C94AAA371C6B5D7AC7F /* PluginMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginMock.swift; sourceTree = "<group>"; };
@@ -601,6 +617,7 @@
 		8D125EC5F9E8972461274744 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F1A576E72409E4B900D35DA8 /* Calculator */,
 				FBE2462BB2817A0775947D90 /* Content */,
 				92304BD4E523A23D5C1CE98C /* ExamplesList */,
 				149222B2FFA5DEF6B0D8DC60 /* Search */,
@@ -743,6 +760,21 @@
 				67D9962AC2E4FCC9226A99FA /* Pods */,
 				273E228E045022886ADD03E9 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		F1A576E72409E4B900D35DA8 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				F1A576E82409E4E500D35DA8 /* CalculatorPlugin.swift */,
+				F1A576EC2409E5C700D35DA8 /* AdditionOperation.swift */,
+				F1A576EE2409E5D000D35DA8 /* SubtractionOperation.swift */,
+				F1A576F02409E5DE00D35DA8 /* MultiplicationOperation.swift */,
+				F1A576F22409E62800D35DA8 /* PCalculatorOperation.swift */,
+				F1A576F42409E70A00D35DA8 /* CalculatorResolver.swift */,
+				F1A576F62409E75100D35DA8 /* CalculatorContext.swift */,
+				F1A576F82409E8AF00D35DA8 /* CalculatorView.swift */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 		F2D060D728B27571785A1A24 /* Plug */ = {
@@ -1388,24 +1420,32 @@
 				21508C7BB4A8EF7EF9AEC8E8 /* FeatureEnabledRule.swift in Sources */,
 				4920F95D4D5FE40796326E8B /* HasSubscriptionRule.swift in Sources */,
 				8232C80AC4414ED1882B539E /* LazyView.swift in Sources */,
+				F1A576F72409E75100D35DA8 /* CalculatorContext.swift in Sources */,
 				F841280BC181298AA023FA35 /* ExamplesList.swift in Sources */,
 				E86E945A32FE64D94D013018 /* ExamplesListContext.swift in Sources */,
 				53E993224E25100189FF36B4 /* ExamplesListPluginFactory.swift in Sources */,
 				C6475ACE86EC64C7E29F4F6A /* ExamplesListResolver.swift in Sources */,
 				7B7386C2D8E05F9AEE3DD675 /* PFeatureResolvableContext.swift in Sources */,
+				F1A576E92409E4E500D35DA8 /* CalculatorPlugin.swift in Sources */,
 				F1A576E62409DC5B00D35DA8 /* PSubscriptionContext.swift in Sources */,
 				D424D308441E52A70D6A9A1A /* SceneDelegate.swift in Sources */,
 				8CFA66D184566D8077C9C43A /* SearchPlugin.swift in Sources */,
 				4EA8A80E23C22730750A9FBF /* SearchPluginFactory.swift in Sources */,
 				C690C3D3A2D8894ED8964AF3 /* SearchResultEntry.swift in Sources */,
+				F1A576ED2409E5C700D35DA8 /* AdditionOperation.swift in Sources */,
 				D1CBAF7E55BC5F25187A1A16 /* SearchView.swift in Sources */,
 				6949F4A73F8DDFA2E3E0F06F /* SearchViewContext.swift in Sources */,
+				F1A576EF2409E5D000D35DA8 /* SubtractionOperation.swift in Sources */,
 				25617C31116979BEFCB28A02 /* SearchViewModel.swift in Sources */,
 				EE2DD6D09897517789FD9CB8 /* TabFeaturesFactory.swift in Sources */,
+				F1A576F52409E70A00D35DA8 /* CalculatorResolver.swift in Sources */,
 				F55450A5CDA620D0C1966EA0 /* TabbarContext.swift in Sources */,
 				DD08D3D3682FA5BBA0551BFF /* TabbarView.swift in Sources */,
 				D33C1E6C7CA7FEA9A9ABA46D /* TabbarResolver.swift in Sources */,
+				F1A576F12409E5DE00D35DA8 /* MultiplicationOperation.swift in Sources */,
 				8E49B1A29E6D31672A43A069 /* ViewPlugin.swift in Sources */,
+				F1A576F32409E62800D35DA8 /* PCalculatorOperation.swift in Sources */,
+				F1A576F92409E8AF00D35DA8 /* CalculatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,7 +40,7 @@ struct ExamplesListPluginFactory {
             wrappedValue: ViewPlugin {
                 return AnyView(
                     NavigationLink(
-                        destination: LazyView { TabbarView() }
+                        destination: LazyView { CalculatorView() }
                     ) { Text("Calculator") })
             }
         )

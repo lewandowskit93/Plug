@@ -8,11 +8,11 @@
 
 import Plug
 
-final class HasSubscriptionRule<Context: PRuleResolvingContext>: PRule {
+final class HasSubscriptionRule<Context: PSubscriptionContext>: PRule {
     init() {
     }
     
     func resolve(with context: Context) -> Bool {
-        return true
+        return context.hasSubscription
     }
 }

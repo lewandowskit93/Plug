@@ -9,5 +9,5 @@
 import Plug
 
 class SearchViewContext: PFeatureResolvableContext {
-    let enabledFeatures: [String] = ["data_source_1", "data_source_2"]
+    let enabledFeatures: [String] = ["jedi", "sith", "ship"]
 }

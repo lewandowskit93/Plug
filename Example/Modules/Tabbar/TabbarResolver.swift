@@ -28,8 +28,7 @@ final class TabbarResolver {
             )^
             |+ ( PluginPointBuilder()
                 <+ pluginFactory.call()
-                §+ FeatureEnabledRule(id: "call").any()
-                §+ HasSubscriptionRule().any()
+                §+ (&&[FeatureEnabledRule<Context>(id: "call").any(), HasSubscriptionRule<Context>().any()]).any()
             )^
         )^
         

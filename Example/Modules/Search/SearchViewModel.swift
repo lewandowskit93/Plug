@@ -11,7 +11,9 @@ import Combine
 import Plug
 
 final class SearchViewModel: ObservableObject {
-    typealias SearchPluginPoint = PluginPoint<SearchViewContext, SearchPlugin<SearchResultEntry>>
+    typealias Context = SearchViewContext
+    typealias Plugin = SearchPlugin<SearchResultEntry>
+    typealias SearchPluginPoint = PluginPoint<Context, Plugin>
     let pluginFactory = SearchPluginFactory()
     let pluginPoint: SearchPluginPoint
     
@@ -27,16 +29,24 @@ final class SearchViewModel: ObservableObject {
     var searchCancellable: AnyCancellable?
         
     init() {
-        pluginPoint = (PluginPointBuilder()
-            |+ ( PluginPointBuilder()
-                    <+ pluginFactory.someValueDataSource()
-                    §+ FeatureEnabledRule(id: "data_source_1").any()
-                )^
-            |+ ( PluginPointBuilder()
-                <+ pluginFactory.otherValueDataSource()
-                §+ FeatureEnabledRule(id: "data_source_2").any()
-            )^
-        )^
+        let pluginFactory = self.pluginFactory
+        pluginPoint = PluginPoint {
+            child { PluginPoint {
+                    plugin(contextType: Context.self) { pluginFactory.jedi() }
+                    rule(pluginType: Plugin.self) { FeatureEnabledRule<Context>(id: "jedi") }
+                }
+            }
+            child { PluginPoint {
+                    plugin(contextType: Context.self) { pluginFactory.sith() }
+                    rule(pluginType: Plugin.self) { FeatureEnabledRule<Context>(id: "sith") }
+                }
+            }
+            child { PluginPoint {
+                    plugin(contextType: Context.self) { pluginFactory.ship() }
+                    rule(pluginType: Plugin.self) { FeatureEnabledRule<Context>(id: "ship") }
+                }
+            }
+        }
         queryCancellable = query.sink { [unowned self] query in
             self.searchWith(query: query)
         }

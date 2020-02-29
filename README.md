@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/badge/Platform-linux-brightgreen.svg)](#)
 [![License](https://img.shields.io/cocoapods/l/Plug.svg?style=flat)](https://cocoapods.org/pods/Plug)
 
-Plug is a lightweight, multiplatform plugin management tool written in pure Swift. It allows to define rules at which given plugins are available.
+Plug is a multi-platform plugin architecture micro-framework and plugin manager written in pure Swift. It allows to define rules that has to be met to activate plugins at given plugin point.
 
 ## Requirements
 
@@ -47,7 +47,7 @@ github "lewandowskit93/Plug"
 
 To install Plug using **Swift Package Manager** go through following steps:
 
-1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.3.0") ```
+1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.4.0") ```
 2. Add following target dependency in your **Package.swift** ``` dependencies: ["Plug"]) ```
 
 For instance this is how it might look like:
@@ -62,7 +62,7 @@ let package = Package(
             targets: ["YourLibrary"])
     ],
     dependencies: [
-        .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.3.0")
+        .package(url: "https://github.com/lewandowskit93/Plug.git", from: "0.4.0")
     ],
     targets: [
         .target(

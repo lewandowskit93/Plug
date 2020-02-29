@@ -8,6 +8,7 @@
 
 import Plug
 
-class TabbarContext: PFeatureResolvableContext {
-    let enabledFeatures: [String] = ["tab_1", "tab_2"]
+class TabbarContext: PFeatureResolvableContext, PSubscriptionContext {
+    let enabledFeatures: [String] = ["profile", "message", "call"]
+    let hasSubscription: Bool = true
 }

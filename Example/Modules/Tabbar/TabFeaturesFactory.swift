@@ -11,22 +11,32 @@ import Combine
 import Plug
 
 struct TabFeaturesFactory {
-    func freeFeature() -> IdentifiedPlugin<ViewPlugin<AnyView>> {
-        return IdentifiedPlugin(id: "tab_2", wrappedValue: ViewPlugin {
-            AnyView(Text("Free feature")
+    func profile() -> IdentifiedPlugin<ViewPlugin<AnyView>> {
+        return IdentifiedPlugin(id: "profile", wrappedValue: ViewPlugin {
+            AnyView(Text("Profile")
               .tabItem {
                  Image(systemName: "person.fill")
-                 Text("Free")
+                 Text("Profile")
                })
         })
     }
     
-    func premiumFeature() -> IdentifiedPlugin<ViewPlugin<AnyView>> {
-        return IdentifiedPlugin(id: "tab_1", wrappedValue: ViewPlugin {
-            AnyView(Text("Premium feature")
+    func message() -> IdentifiedPlugin<ViewPlugin<AnyView>> {
+        return IdentifiedPlugin(id: "message", wrappedValue: ViewPlugin {
+            AnyView(Text("Message")
+              .tabItem {
+                 Image(systemName: "message.fill")
+                 Text("Message")
+            })
+        })
+    }
+    
+    func call() -> IdentifiedPlugin<ViewPlugin<AnyView>> {
+        return IdentifiedPlugin(id: "call", wrappedValue: ViewPlugin {
+            AnyView(Text("Call")
               .tabItem {
                  Image(systemName: "phone.fill")
-                 Text("Premium")
+                 Text("Call")
             })
         })
     }

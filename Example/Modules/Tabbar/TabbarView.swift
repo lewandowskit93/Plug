@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct TabbarView: View {
-    var viewModel: TabbarViewModel = TabbarViewModel()
+    let resolver = TabbarResolver()
     
     init() {
         
@@ -17,7 +17,7 @@ struct TabbarView: View {
     
     var body: some View {
         TabView {
-            ForEach(viewModel.pluginPoint.getAvailablePlugins(context: TabbarContext())) { plugin in
+            ForEach(resolver.pluginPoint.getAvailablePlugins(context: TabbarContext())) { plugin in
                 return plugin.plugin.view
             }
         }
